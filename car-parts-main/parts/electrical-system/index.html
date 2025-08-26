@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Electrical System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Electrical System</h1>
+
+    <img src="image.jpg" alt="Electrical System Diagram" />
+
+    <p id="intro">
+      The electrical system powers the vehicle's electronics, lights, ignition, and charging components. It includes the battery, alternator, starter motor, and wiring.
+    </p>
+
+    <h2 id="mech">Electrical Function</h2>
+    <ul id="mechList">
+      <li><strong>Battery:</strong> Supplies power to start the engine and run electronics.</li>
+      <li><strong>Alternator:</strong> Charges the battery and powers systems while the engine runs.</li>
+      <li><strong>Starter Motor:</strong> Cranks the engine to start the vehicle.</li>
+      <li><strong>Wiring:</strong> Connects and delivers power throughout the vehicle.</li>
+    </ul>
+
+    <h2 id="comp">Key Components</h2>
+    <ul id="compList">
+      <li><strong>Battery:</strong> Main source of electrical energy.</li>
+      <li><strong>Alternator:</strong> Generates electricity while the engine runs.</li>
+      <li><strong>Starter Motor:</strong> Initiates engine ignition.</li>
+      <li><strong>Fuses & Relays:</strong> Protect and control electrical circuits.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Electrical System",
+      intro: "The electrical system powers the vehicle's electronics, lights, ignition, and charging components. It includes the battery, alternator, starter motor, and wiring.",
+      mech: "Electrical Function",
+      mechList: `
+        <li><strong>Battery:</strong> Supplies power to start the engine and run electronics.</li>
+        <li><strong>Alternator:</strong> Charges the battery and powers systems while the engine runs.</li>
+        <li><strong>Starter Motor:</strong> Cranks the engine to start the vehicle.</li>
+        <li><strong>Wiring:</strong> Connects and delivers power throughout the vehicle.</li>`,
+      comp: "Key Components",
+      compList: `
+        <li><strong>Battery:</strong> Main source of electrical energy.</li>
+        <li><strong>Alternator:</strong> Generates electricity while the engine runs.</li>
+        <li><strong>Starter Motor:</strong> Initiates engine ignition.</li>
+        <li><strong>Fuses & Relays:</strong> Protect and control electrical circuits.</li>`
+    };
+
+    const greekTexts = {
+      title: "Ηλεκτρικό Σύστημα",
+      intro: "Το ηλεκτρικό σύστημα τροφοδοτεί τα ηλεκτρονικά του οχήματος, τα φώτα, την ανάφλεξη και τα εξαρτήματα φόρτισης. Περιλαμβάνει την μπαταρία, τον εναλλάκτη, τον εκκινητή και την καλωδίωση.",
+      mech: "Ηλεκτρική Λειτουργία",
+      mechList: `
+        <li><strong>Μπαταρία:</strong> Παρέχει ενέργεια για την εκκίνηση του κινητήρα και τη λειτουργία των ηλεκτρονικών.</li>
+        <li><strong>Εναλλάκτης:</strong> Φορτίζει την μπαταρία και τροφοδοτεί τα συστήματα κατά τη λειτουργία του κινητήρα.</li>
+        <li><strong>Εκκινητής:</strong> Περιστρέφει τον κινητήρα για την εκκίνησή του.</li>
+        <li><strong>Καλωδίωση:</strong> Συνδέει και διανέμει την ηλεκτρική ενέργεια στο όχημα.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Μπαταρία:</strong> Κύρια πηγή ηλεκτρικής ενέργειας.</li>
+        <li><strong>Εναλλάκτης:</strong> Παράγει ηλεκτρική ενέργεια κατά τη λειτουργία του κινητήρα.</li>
+        <li><strong>Εκκινητής:</strong> Ξεκινά την ανάφλεξη του κινητήρα.</li>
+        <li><strong>Ασφάλειες & Ρελέ:</strong> Προστατεύουν και ελέγχουν τα ηλεκτρικά κυκλώματα.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

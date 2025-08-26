@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>HVAC System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">HVAC System</h1>
+
+    <img src="image.jpg" alt="HVAC System Diagram" />
+
+    <p id="intro">
+      The HVAC system controls the temperature, humidity, and air quality inside the vehicle. It includes components like the compressor, condenser, evaporator, heater core, and blower motor.
+    </p>
+
+    <h2 id="mech">How It Works</h2>
+    <ul id="mechList">
+      <li><strong>Compressor:</strong> Pressurizes refrigerant and starts the cooling cycle.</li>
+      <li><strong>Condenser:</strong> Releases heat from the refrigerant to the outside air.</li>
+      <li><strong>Evaporator:</strong> Absorbs heat from inside the cabin for cooling.</li>
+      <li><strong>Heater Core:</strong> Transfers engine heat to warm the cabin air.</li>
+    </ul>
+
+    <h2 id="comp">Key Components</h2>
+    <ul id="compList">
+      <li><strong>Compressor:</strong> The heart of the A/C system, circulates refrigerant.</li>
+      <li><strong>Condenser:</strong> Located at the front, cools high-pressure gas into liquid.</li>
+      <li><strong>Evaporator:</strong> Cools and dehumidifies air entering the cabin.</li>
+      <li><strong>Blower Motor:</strong> Pushes air through the HVAC ducts.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "HVAC System",
+      intro: "The HVAC system controls the temperature, humidity, and air quality inside the vehicle. It includes components like the compressor, condenser, evaporator, heater core, and blower motor.",
+      mech: "How It Works",
+      mechList: `
+        <li><strong>Compressor:</strong> Pressurizes refrigerant and starts the cooling cycle.</li>
+        <li><strong>Condenser:</strong> Releases heat from the refrigerant to the outside air.</li>
+        <li><strong>Evaporator:</strong> Absorbs heat from inside the cabin for cooling.</li>
+        <li><strong>Heater Core:</strong> Transfers engine heat to warm the cabin air.</li>`,
+      comp: "Key Components",
+      compList: `
+        <li><strong>Compressor:</strong> The heart of the A/C system, circulates refrigerant.</li>
+        <li><strong>Condenser:</strong> Located at the front, cools high-pressure gas into liquid.</li>
+        <li><strong>Evaporator:</strong> Cools and dehumidifies air entering the cabin.</li>
+        <li><strong>Blower Motor:</strong> Pushes air through the HVAC ducts.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Κλιματισμού (HVAC)",
+      intro: "Το σύστημα HVAC ρυθμίζει τη θερμοκρασία, την υγρασία και την ποιότητα του αέρα στο εσωτερικό του οχήματος. Περιλαμβάνει τον συμπιεστή, τον συμπυκνωτή, τον εξατμιστή, τον εναλλάκτη θέρμανσης και τον ανεμιστήρα.",
+      mech: "Πώς Λειτουργεί",
+      mechList: `
+        <li><strong>Συμπιεστής:</strong> Συμπιέζει το ψυκτικό υγρό και ξεκινά τον κύκλο ψύξης.</li>
+        <li><strong>Συμπυκνωτής:</strong> Απελευθερώνει τη θερμότητα από το ψυκτικό στον εξωτερικό αέρα.</li>
+        <li><strong>Εξατμιστής:</strong> Απορροφά θερμότητα από την καμπίνα για ψύξη.</li>
+        <li><strong>Εναλλάκτης Θέρμανσης:</strong> Μεταφέρει τη θερμότητα του κινητήρα στον αέρα της καμπίνας.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Συμπιεστής:</strong> Η «καρδιά» του A/C, κυκλοφορεί το ψυκτικό υγρό.</li>
+        <li><strong>Συμπυκνωτής:</strong> Βρίσκεται μπροστά και ψύχει το αέριο υψηλής πίεσης σε υγρό.</li>
+        <li><strong>Εξατμιστής:</strong> Ψύχει και αφυγραίνει τον αέρα που εισέρχεται στην καμπίνα.</li>
+        <li><strong>Ανεμιστήρας (Blower Motor):</strong> Ωθεί τον αέρα μέσω των αεραγωγών HVAC.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

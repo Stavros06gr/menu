@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Differential</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Differential</h1>
+
+    <img src="image.jpg" alt="Differential Diagram" />
+
+    <p id="intro">
+      The differential allows the wheels to rotate at different speeds while transmitting power from the engine to the wheels, especially when turning.
+    </p>
+
+    <h2 id="mech">Mechanical Process</h2>
+    <ul id="mechList">
+      <li><strong>Ring Gear:</strong> Transfers power from the driveshaft to the differential.</li>
+      <li><strong>Pinion Gear:</strong> Engages with the ring gear to drive the differential.</li>
+      <li><strong>Side Gears:</strong> Connect to the axle shafts and allow wheels to spin at different speeds.</li>
+      <li><strong>Spider Gears:</strong> Allow the differential to split torque and enable wheel speed variation.</li>
+    </ul>
+
+    <h2 id="comp">Core Components</h2>
+    <ul id="compList">
+      <li><strong>Ring Gear:</strong> Large gear connected to the differential case.</li>
+      <li><strong>Pinion Gear:</strong> Small gear driven by the driveshaft.</li>
+      <li><strong>Axle Shafts:</strong> Transfer power from the differential to the wheels.</li>
+      <li><strong>Differential Case:</strong> Houses the gears and allows rotation.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Differential",
+      intro: "The differential allows the wheels to rotate at different speeds while transmitting power from the engine to the wheels, especially when turning.",
+      mech: "Mechanical Process",
+      mechList: `
+        <li><strong>Ring Gear:</strong> Transfers power from the driveshaft to the differential.</li>
+        <li><strong>Pinion Gear:</strong> Engages with the ring gear to drive the differential.</li>
+        <li><strong>Side Gears:</strong> Connect to the axle shafts and allow wheels to spin at different speeds.</li>
+        <li><strong>Spider Gears:</strong> Allow the differential to split torque and enable wheel speed variation.</li>`,
+      comp: "Core Components",
+      compList: `
+        <li><strong>Ring Gear:</strong> Large gear connected to the differential case.</li>
+        <li><strong>Pinion Gear:</strong> Small gear driven by the driveshaft.</li>
+        <li><strong>Axle Shafts:</strong> Transfer power from the differential to the wheels.</li>
+        <li><strong>Differential Case:</strong> Houses the gears and allows rotation.</li>`
+    };
+
+    const greekTexts = {
+      title: "Διαφορικό",
+      intro: "Το διαφορικό επιτρέπει στους τροχούς να περιστρέφονται με διαφορετικές ταχύτητες ενώ μεταδίδει την ισχύ από τον κινητήρα στους τροχούς, ειδικά κατά τη στροφή.",
+      mech: "Μηχανική Διαδικασία",
+      mechList: `
+        <li><strong>Δακτυλιοειδής Τροχός (Ring Gear):</strong> Μεταφέρει ισχύ από τον άξονα μετάδοσης στο διαφορικό.</li>
+        <li><strong>Μικρός Τροχός (Pinion Gear):</strong> Συνεργάζεται με τον δακτυλιοειδή τροχό για να κινήσει το διαφορικό.</li>
+        <li><strong>Πλευρικοί Τροχοί (Side Gears):</strong> Συνδέονται με τους άξονες και επιτρέπουν στους τροχούς να περιστρέφονται με διαφορετικές ταχύτητες.</li>
+        <li><strong>Τροχοί Αράχνης (Spider Gears):</strong> Επιτρέπουν στο διαφορικό να χωρίζει τη ροπή και να επιτρέπει τη διαφοροποίηση της ταχύτητας των τροχών.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Δακτυλιοειδής Τροχός (Ring Gear):</strong> Μεγάλος τροχός συνδεδεμένος με το περίβλημα του διαφορικού.</li>
+        <li><strong>Μικρός Τροχός (Pinion Gear):</strong> Μικρός τροχός που κινείται από τον άξονα μετάδοσης.</li>
+        <li><strong>Άξονες Τροχών (Axle Shafts):</strong> Μεταφέρουν ισχύ από το διαφορικό στους τροχούς.</li>
+        <li><strong>Περίβλημα Διαφορικού (Differential Case):</strong> Φιλοξενεί τους τροχούς και επιτρέπει την περιστροφή.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

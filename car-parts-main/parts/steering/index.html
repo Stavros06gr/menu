@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Steering System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Steering System</h1>
+
+    <img src="image.jpg" alt="Steering System Diagram" />
+
+    <p id="intro">
+      The steering system allows the driver to control the direction of the vehicle. It includes components like the steering wheel, steering column, rack and pinion or steering box, and tie rods.
+    </p>
+
+    <h2 id="mech">How Steering Works</h2>
+    <ul id="mechList">
+      <li><strong>Steering Wheel:</strong> The driver’s input device for turning the vehicle.</li>
+      <li><strong>Steering Column:</strong> Connects the wheel to the steering mechanism.</li>
+      <li><strong>Rack and Pinion:</strong> Converts rotary motion into linear motion to turn the wheels.</li>
+      <li><strong>Tie Rods:</strong> Transmit motion from the steering rack to the wheels.</li>
+    </ul>
+
+    <h2 id="comp">Key Components</h2>
+    <ul id="compList">
+      <li><strong>Steering Wheel:</strong> User interface for steering control.</li>
+      <li><strong>Steering Column:</strong> Houses linkages and often electrical controls.</li>
+      <li><strong>Power Steering Pump:</strong> Assists with steering effort in hydraulic systems.</li>
+      <li><strong>Electronic Control Unit:</strong> Manages input in electric power steering (EPS) systems.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Steering System",
+      intro: "The steering system allows the driver to control the direction of the vehicle. It includes components like the steering wheel, steering column, rack and pinion or steering box, and tie rods.",
+      mech: "How Steering Works",
+      mechList: `
+        <li><strong>Steering Wheel:</strong> The driver’s input device for turning the vehicle.</li>
+        <li><strong>Steering Column:</strong> Connects the wheel to the steering mechanism.</li>
+        <li><strong>Rack and Pinion:</strong> Converts rotary motion into linear motion to turn the wheels.</li>
+        <li><strong>Tie Rods:</strong> Transmit motion from the steering rack to the wheels.</li>`,
+      comp: "Key Components",
+      compList: `
+        <li><strong>Steering Wheel:</strong> User interface for steering control.</li>
+        <li><strong>Steering Column:</strong> Houses linkages and often electrical controls.</li>
+        <li><strong>Power Steering Pump:</strong> Assists with steering effort in hydraulic systems.</li>
+        <li><strong>Electronic Control Unit:</strong> Manages input in electric power steering (EPS) systems.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Διεύθυνσης",
+      intro: "Το σύστημα διεύθυνσης επιτρέπει στον οδηγό να ελέγχει την κατεύθυνση του οχήματος. Περιλαμβάνει το τιμόνι, τη στήλη διεύθυνσης, το σύστημα γραναζιού και κρεμαγιέρας ή το κουτί διεύθυνσης και τις μπάρες τιμονιού.",
+      mech: "Πώς Λειτουργεί το Σύστημα Διεύθυνσης",
+      mechList: `
+        <li><strong>Τιμόνι:</strong> Το βασικό μέσο με το οποίο ο οδηγός κατευθύνει το όχημα.</li>
+        <li><strong>Στήλη Διεύθυνσης:</strong> Συνδέει το τιμόνι με τον μηχανισμό διεύθυνσης.</li>
+        <li><strong>Γρανάζι και Κρεμαγιέρα:</strong> Μετατρέπουν την περιστροφική κίνηση σε ευθύγραμμη για να στραφούν οι τροχοί.</li>
+        <li><strong>Μπάρες Τιμονιού:</strong> Μεταφέρουν την κίνηση από την κρεμαγιέρα στους τροχούς.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Τιμόνι:</strong> Μέσο ελέγχου της διεύθυνσης από τον οδηγό.</li>
+        <li><strong>Στήλη Διεύθυνσης:</strong> Περιέχει συνδέσεις και ηλεκτρικά χειριστήρια.</li>
+        <li><strong>Αντλία Υδραυλικού Τιμονιού:</strong> Βοηθά στην ευκολότερη περιστροφή του τιμονιού σε υδραυλικά συστήματα.</li>
+        <li><strong>Ηλεκτρονική Μονάδα Ελέγχου:</strong> Διαχειρίζεται τις εισόδους στο ηλεκτρικό σύστημα διεύθυνσης (EPS).</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

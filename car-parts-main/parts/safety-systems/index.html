@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Safety Systems</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Safety Systems</h1>
+
+    <img src="image.jpg" alt="Vehicle Safety Systems Diagram" />
+
+    <p id="intro">
+      Vehicle safety systems are designed to protect passengers and reduce the risk of injury during accidents. They include features such as airbags, seatbelts, ABS, traction control, and advanced driver-assistance systems (ADAS).
+    </p>
+
+    <h2 id="mech">How Safety Systems Work</h2>
+    <ul id="mechList">
+      <li><strong>Seatbelts:</strong> Keep occupants restrained during sudden stops or collisions.</li>
+      <li><strong>Airbags:</strong> Deploy on impact to cushion and protect passengers.</li>
+      <li><strong>ABS (Anti-lock Braking System):</strong> Prevents wheel lockup during braking.</li>
+      <li><strong>Traction Control:</strong> Helps maintain grip on slippery surfaces.</li>
+    </ul>
+
+    <h2 id="comp">Key Components</h2>
+    <ul id="compList">
+      <li><strong>Airbags:</strong> Front, side, curtain, and knee airbags protect various parts of the body.</li>
+      <li><strong>Seatbelt Pretensioners:</strong> Tighten seatbelts instantly during a crash.</li>
+      <li><strong>Electronic Stability Control (ESC):</strong> Helps maintain vehicle control.</li>
+      <li><strong>ADAS:</strong> Includes lane assist, automatic braking, blind-spot monitoring, and more.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Safety Systems",
+      intro: "Vehicle safety systems are designed to protect passengers and reduce the risk of injury during accidents. They include features such as airbags, seatbelts, ABS, traction control, and advanced driver-assistance systems (ADAS).",
+      mech: "How Safety Systems Work",
+      mechList: `
+        <li><strong>Seatbelts:</strong> Keep occupants restrained during sudden stops or collisions.</li>
+        <li><strong>Airbags:</strong> Deploy on impact to cushion and protect passengers.</li>
+        <li><strong>ABS (Anti-lock Braking System):</strong> Prevents wheel lockup during braking.</li>
+        <li><strong>Traction Control:</strong> Helps maintain grip on slippery surfaces.</li>`,
+      comp: "Key Components",
+      compList: `
+        <li><strong>Airbags:</strong> Front, side, curtain, and knee airbags protect various parts of the body.</li>
+        <li><strong>Seatbelt Pretensioners:</strong> Tighten seatbelts instantly during a crash.</li>
+        <li><strong>Electronic Stability Control (ESC):</strong> Helps maintain vehicle control.</li>
+        <li><strong>ADAS:</strong> Includes lane assist, automatic braking, blind-spot monitoring, and more.</li>`
+    };
+
+    const greekTexts = {
+      title: "Συστήματα Ασφαλείας",
+      intro: "Τα συστήματα ασφαλείας οχημάτων έχουν σχεδιαστεί για την προστασία των επιβατών και τη μείωση του κινδύνου τραυματισμού σε περίπτωση ατυχήματος. Περιλαμβάνουν αερόσακους, ζώνες ασφαλείας, ABS, σύστημα ελέγχου πρόσφυσης και προηγμένα συστήματα υποβοήθησης οδηγού (ADAS).",
+      mech: "Πώς Λειτουργούν τα Συστήματα Ασφαλείας",
+      mechList: `
+        <li><strong>Ζώνες Ασφαλείας:</strong> Κρατούν τους επιβάτες σταθερούς σε απότομο φρενάρισμα ή σύγκρουση.</li>
+        <li><strong>Αερόσακοι:</strong> Ενεργοποιούνται σε σύγκρουση για να προστατεύσουν τους επιβάτες.</li>
+        <li><strong>ABS (Σύστημα Αντιμπλοκαρίσματος Φρένων):</strong> Αποτρέπει το μπλοκάρισμα των τροχών κατά το φρενάρισμα.</li>
+        <li><strong>Έλεγχος Πρόσφυσης:</strong> Βοηθά στη διατήρηση της πρόσφυσης σε ολισθηρές επιφάνειες.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Αερόσακοι:</strong> Μπροστινοί, πλευρικοί, τύπου κουρτίνας και για τα γόνατα προστατεύουν διάφορα μέρη του σώματος.</li>
+        <li><strong>Προεντατήρες Ζωνών:</strong> Σφίγγουν αυτόματα τις ζώνες κατά τη διάρκεια σύγκρουσης.</li>
+        <li><strong>Ηλεκτρονικός Έλεγχος Ευστάθειας (ESC):</strong> Βοηθά στη διατήρηση του ελέγχου του οχήματος.</li>
+        <li><strong>ADAS:</strong> Περιλαμβάνει υποβοήθηση λωρίδας, αυτόματο φρενάρισμα, ειδοποίηση τυφλού σημείου κ.ά.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

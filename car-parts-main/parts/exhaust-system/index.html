@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Exhaust System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Exhaust System</h1>
+
+    <img src="image.jpg" alt="Exhaust System Diagram" />
+
+    <p id="intro">
+      The exhaust system channels combustion gases away from the engine and reduces noise and emissions. It includes components like the exhaust manifold, catalytic converter, muffler, and tailpipe.
+    </p>
+
+    <h2 id="mech">Exhaust Flow Process</h2>
+    <ul id="mechList">
+      <li><strong>Exhaust Manifold:</strong> Collects gases from the engine cylinders.</li>
+      <li><strong>Catalytic Converter:</strong> Converts toxic gases into safer compounds.</li>
+      <li><strong>Muffler:</strong> Reduces engine noise.</li>
+      <li><strong>Tailpipe:</strong> Releases cleaned gases into the atmosphere.</li>
+    </ul>
+
+    <h2 id="comp">Key Components</h2>
+    <ul id="compList">
+      <li><strong>Exhaust Manifold:</strong> Channels gases from engine to exhaust system.</li>
+      <li><strong>Catalytic Converter:</strong> Essential for emission reduction.</li>
+      <li><strong>Muffler:</strong> Silences exhaust noise using sound-dampening chambers.</li>
+      <li><strong>Resonator:</strong> Tunes sound and helps reduce noise further.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Exhaust System",
+      intro: "The exhaust system channels combustion gases away from the engine and reduces noise and emissions. It includes components like the exhaust manifold, catalytic converter, muffler, and tailpipe.",
+      mech: "Exhaust Flow Process",
+      mechList: `
+        <li><strong>Exhaust Manifold:</strong> Collects gases from the engine cylinders.</li>
+        <li><strong>Catalytic Converter:</strong> Converts toxic gases into safer compounds.</li>
+        <li><strong>Muffler:</strong> Reduces engine noise.</li>
+        <li><strong>Tailpipe:</strong> Releases cleaned gases into the atmosphere.</li>`,
+      comp: "Key Components",
+      compList: `
+        <li><strong>Exhaust Manifold:</strong> Channels gases from engine to exhaust system.</li>
+        <li><strong>Catalytic Converter:</strong> Essential for emission reduction.</li>
+        <li><strong>Muffler:</strong> Silences exhaust noise using sound-dampening chambers.</li>
+        <li><strong>Resonator:</strong> Tunes sound and helps reduce noise further.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Εξάτμισης",
+      intro: "Το σύστημα εξάτμισης απομακρύνει τα αέρια καύσης από τον κινητήρα και μειώνει τον θόρυβο και τις εκπομπές. Περιλαμβάνει τη πολλαπλή εξαγωγής, τον καταλύτη, τον σιγαστήρα και την εξάτμιση.",
+      mech: "Διαδικασία Ροής Εξάτμισης",
+      mechList: `
+        <li><strong>Πολλαπλή Εξαγωγής:</strong> Συλλέγει αέρια από τους κυλίνδρους του κινητήρα.</li>
+        <li><strong>Καταλύτης:</strong> Μετατρέπει τα τοξικά αέρια σε ασφαλέστερες ενώσεις.</li>
+        <li><strong>Σιγαστήρας:</strong> Μειώνει τον θόρυβο του κινητήρα.</li>
+        <li><strong>Σωλήνας Εξάτμισης:</strong> Απελευθερώνει τα καθαρισμένα αέρια στην ατμόσφαιρα.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Πολλαπλή Εξαγωγής:</strong> Κατευθύνει τα αέρια από τον κινητήρα στο σύστημα εξάτμισης.</li>
+        <li><strong>Καταλύτης:</strong> Απαραίτητος για τη μείωση εκπομπών.</li>
+        <li><strong>Σιγαστήρας:</strong> Σιωπά τον θόρυβο της εξάτμισης με θαλάμους απορρόφησης ήχου.</li>
+        <li><strong>Συντονιστής (Resonator):</strong> Ρυθμίζει τον ήχο και συμβάλλει στη μείωση θορύβου.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

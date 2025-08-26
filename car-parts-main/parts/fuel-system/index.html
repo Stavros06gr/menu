@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Fuel System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Fuel System</h1>
+
+    <img src="image.jpg" alt="Fuel System Diagram" />
+
+    <p id="intro">
+      The fuel system stores and delivers fuel to the engine for combustion. It includes components like the fuel tank, fuel pump, fuel injectors or carburetor, and fuel filter.
+    </p>
+
+    <h2 id="mech">Fuel Delivery Process</h2>
+    <ul id="mechList">
+      <li><strong>Fuel Tank:</strong> Stores fuel for the engine.</li>
+      <li><strong>Fuel Pump:</strong> Sends fuel from the tank to the engine.</li>
+      <li><strong>Fuel Filter:</strong> Removes impurities from the fuel.</li>
+      <li><strong>Fuel Injectors/Carburetor:</strong> Mix fuel with air for combustion.</li>
+    </ul>
+
+    <h2 id="comp">Key Components</h2>
+    <ul id="compList">
+      <li><strong>Fuel Tank:</strong> Holds gasoline or diesel fuel.</li>
+      <li><strong>Fuel Pump:</strong> Provides the required pressure to move fuel.</li>
+      <li><strong>Fuel Filter:</strong> Ensures clean fuel reaches the engine.</li>
+      <li><strong>Fuel Injectors:</strong> Precisely deliver fuel into the combustion chamber.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Fuel System",
+      intro: "The fuel system stores and delivers fuel to the engine for combustion. It includes components like the fuel tank, fuel pump, fuel injectors or carburetor, and fuel filter.",
+      mech: "Fuel Delivery Process",
+      mechList: `
+        <li><strong>Fuel Tank:</strong> Stores fuel for the engine.</li>
+        <li><strong>Fuel Pump:</strong> Sends fuel from the tank to the engine.</li>
+        <li><strong>Fuel Filter:</strong> Removes impurities from the fuel.</li>
+        <li><strong>Fuel Injectors/Carburetor:</strong> Mix fuel with air for combustion.</li>`,
+      comp: "Key Components",
+      compList: `
+        <li><strong>Fuel Tank:</strong> Holds gasoline or diesel fuel.</li>
+        <li><strong>Fuel Pump:</strong> Provides the required pressure to move fuel.</li>
+        <li><strong>Fuel Filter:</strong> Ensures clean fuel reaches the engine.</li>
+        <li><strong>Fuel Injectors:</strong> Precisely deliver fuel into the combustion chamber.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Καυσίμου",
+      intro: "Το σύστημα καυσίμου αποθηκεύει και μεταφέρει το καύσιμο στον κινητήρα για καύση. Περιλαμβάνει το ρεζερβουάρ, την αντλία καυσίμου, τα μπεκ ή τον καρμπυρατέρ και το φίλτρο καυσίμου.",
+      mech: "Διαδικασία Παροχής Καυσίμου",
+      mechList: `
+        <li><strong>Ρεζερβουάρ:</strong> Αποθηκεύει το καύσιμο για τον κινητήρα.</li>
+        <li><strong>Αντλία Καυσίμου:</strong> Μεταφέρει καύσιμο από το ρεζερβουάρ στον κινητήρα.</li>
+        <li><strong>Φίλτρο Καυσίμου:</strong> Αφαιρεί ακαθαρσίες από το καύσιμο.</li>
+        <li><strong>Μπεκ/Καρμπυρατέρ:</strong> Αναμιγνύουν το καύσιμο με αέρα για καύση.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Ρεζερβουάρ:</strong> Περιέχει βενζίνη ή πετρέλαιο.</li>
+        <li><strong>Αντλία Καυσίμου:</strong> Παρέχει την απαραίτητη πίεση για τη μεταφορά του καυσίμου.</li>
+        <li><strong>Φίλτρο Καυσίμου:</strong> Εξασφαλίζει καθαρό καύσιμο προς τον κινητήρα.</li>
+        <li><strong>Μπεκ Καυσίμου:</strong> Παρέχουν με ακρίβεια καύσιμο στον θάλαμο καύσης.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

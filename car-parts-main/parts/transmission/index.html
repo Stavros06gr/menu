@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Transmission System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Transmission System</h1>
+
+    <img src="image.jpg" alt="Transmission System Diagram" />
+
+    <p id="intro">
+      The transmission system transfers power from the engine to the driveshaft, allowing the vehicle to change speed and torque. It includes the gearbox, clutch, torque converter, and gear sets.
+    </p>
+
+    <h2 id="mech">How Transmission Works</h2>
+    <ul id="mechList">
+      <li><strong>Gearbox:</strong> Adjusts torque and speed through gear ratios.</li>
+      <li><strong>Clutch:</strong> Connects and disconnects engine power to the transmission.</li>
+      <li><strong>Torque Converter:</strong> Transfers rotating power in automatic transmissions.</li>
+      <li><strong>Gear Sets:</strong> Different gears that provide various speed and torque options.</li>
+    </ul>
+
+    <h2 id="comp">Key Components</h2>
+    <ul id="compList">
+      <li><strong>Gearbox:</strong> Contains the gears that change speed and torque.</li>
+      <li><strong>Clutch:</strong> Engages and disengages power transmission.</li>
+      <li><strong>Torque Converter:</strong> Fluid coupling that transmits power in automatic transmissions.</li>
+      <li><strong>Shift Linkage:</strong> Connects the gear selector to the transmission.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Transmission System",
+      intro: "The transmission system transfers power from the engine to the driveshaft, allowing the vehicle to change speed and torque. It includes the gearbox, clutch, torque converter, and gear sets.",
+      mech: "How Transmission Works",
+      mechList: `
+        <li><strong>Gearbox:</strong> Adjusts torque and speed through gear ratios.</li>
+        <li><strong>Clutch:</strong> Connects and disconnects engine power to the transmission.</li>
+        <li><strong>Torque Converter:</strong> Transfers rotating power in automatic transmissions.</li>
+        <li><strong>Gear Sets:</strong> Different gears that provide various speed and torque options.</li>`,
+      comp: "Key Components",
+      compList: `
+        <li><strong>Gearbox:</strong> Contains the gears that change speed and torque.</li>
+        <li><strong>Clutch:</strong> Engages and disengages power transmission.</li>
+        <li><strong>Torque Converter:</strong> Fluid coupling that transmits power in automatic transmissions.</li>
+        <li><strong>Shift Linkage:</strong> Connects the gear selector to the transmission.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Κιβωτίου Ταχυτήτων",
+      intro: "Το σύστημα κιβωτίου μεταφέρει την ισχύ από τον κινητήρα στον άξονα μετάδοσης, επιτρέποντας την αλλαγή ταχύτητας και ροπής του οχήματος. Περιλαμβάνει το κιβώτιο ταχυτήτων, τον συμπλέκτη, τον μετατροπέα ροπής και τα σετ γραναζιών.",
+      mech: "Πώς Λειτουργεί το Κιβώτιο Ταχυτήτων",
+      mechList: `
+        <li><strong>Κιβώτιο Ταχυτήτων:</strong> Προσαρμόζει τη ροπή και την ταχύτητα μέσω σχέσεων γραναζιών.</li>
+        <li><strong>Συμπλέκτης:</strong> Συνδέει και αποσυνδέει την ισχύ του κινητήρα από το κιβώτιο.</li>
+        <li><strong>Μετατροπέας Ροπής:</strong> Μεταφέρει την περιστροφική ισχύ σε αυτόματα κιβώτια.</li>
+        <li><strong>Σετ Γραναζιών:</strong> Διάφορα γρανάζια που προσφέρουν επιλογές ταχύτητας και ροπής.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Κιβώτιο Ταχυτήτων:</strong> Περιέχει τα γρανάζια που αλλάζουν ταχύτητα και ροπή.</li>
+        <li><strong>Συμπλέκτης:</strong> Ενεργοποιεί και απενεργοποιεί τη μετάδοση ισχύος.</li>
+        <li><strong>Μετατροπέας Ροπής:</strong> Υδραυλικό σύστημα που μεταφέρει ισχύ σε αυτόματα κιβώτια.</li>
+        <li><strong>Μηχανισμός Αλλαγής Ταχυτήτων:</strong> Συνδέει τον επιλογέα με το κιβώτιο ταχυτήτων.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

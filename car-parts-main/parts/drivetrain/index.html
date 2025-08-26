@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../../logo.png">
+    <title>Drivetrain</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Drivetrain</h1>
+
+    <img src="image.jpg" alt="Drivetrain Diagram" />
+
+    <p id="intro">
+      The drivetrain transfers power from the engine to the wheels, enabling the vehicle to move. It includes components like the transmission, driveshaft, differential, and axles.
+    </p>
+
+    <h2 id="mech">Mechanical Process</h2>
+    <ul id="mechList">
+      <li><strong>Engine Output:</strong> Generates rotational force to power the vehicle.</li>
+      <li><strong>Transmission:</strong> Adjusts the engine's torque and speed for different driving conditions.</li>
+      <li><strong>Driveshaft:</strong> Transfers power from the transmission to the differential.</li>
+      <li><strong>Differential:</strong> Splits power between wheels and allows different wheel speeds when turning.</li>
+    </ul>
+
+    <h2 id="comp">Core Components</h2>
+    <ul id="compList">
+      <li><strong>Transmission:</strong> Gear system that adjusts engine power.</li>
+      <li><strong>Driveshaft:</strong> Shaft connecting transmission to differential.</li>
+      <li><strong>Differential:</strong> Gear assembly distributing power to wheels.</li>
+      <li><strong>Axles:</strong> Deliver torque to the drive wheels.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Drivetrain",
+      intro: "The drivetrain transfers power from the engine to the wheels, enabling the vehicle to move. It includes components like the transmission, driveshaft, differential, and axles.",
+      mech: "Mechanical Process",
+      mechList: `
+        <li><strong>Engine Output:</strong> Generates rotational force to power the vehicle.</li>
+        <li><strong>Transmission:</strong> Adjusts the engine's torque and speed for different driving conditions.</li>
+        <li><strong>Driveshaft:</strong> Transfers power from the transmission to the differential.</li>
+        <li><strong>Differential:</strong> Splits power between wheels and allows different wheel speeds when turning.</li>`,
+      comp: "Core Components",
+      compList: `
+        <li><strong>Transmission:</strong> Gear system that adjusts engine power.</li>
+        <li><strong>Driveshaft:</strong> Shaft connecting transmission to differential.</li>
+        <li><strong>Differential:</strong> Gear assembly distributing power to wheels.</li>
+        <li><strong>Axles:</strong> Deliver torque to the drive wheels.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Μετάδοσης Κίνησης",
+      intro: "Το σύστημα μετάδοσης κίνησης μεταφέρει την ισχύ από τον κινητήρα στους τροχούς, επιτρέποντας την κίνηση του οχήματος. Περιλαμβάνει το κιβώτιο ταχυτήτων, τον άξονα μετάδοσης, το διαφορικό και τους άξονες τροχών.",
+      mech: "Μηχανική Διαδικασία",
+      mechList: `
+        <li><strong>Έξοδος Κινητήρα:</strong> Παράγει περιστροφική δύναμη για την κίνηση του οχήματος.</li>
+        <li><strong>Κιβώτιο Ταχυτήτων:</strong> Προσαρμόζει τη ροπή και την ταχύτητα του κινητήρα στις απαιτήσεις οδήγησης.</li>
+        <li><strong>Άξονας Μετάδοσης:</strong> Μεταφέρει την ισχύ από το κιβώτιο στο διαφορικό.</li>
+        <li><strong>Διαφορικό:</strong> Κατανέμει την ισχύ στους τροχούς και επιτρέπει διαφορετικές ταχύτητες περιστροφής.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Κιβώτιο Ταχυτήτων:</strong> Σύστημα γραναζιών που προσαρμόζει την ισχύ του κινητήρα.</li>
+        <li><strong>Άξονας Μετάδοσης:</strong> Συνδέει το κιβώτιο με το διαφορικό.</li>
+        <li><strong>Διαφορικό:</strong> Μηχανισμός που διανέμει την ισχύ στους τροχούς.</li>
+        <li><strong>Άξονες:</strong> Μεταφέρουν τη ροπή στους τροχούς κίνησης.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

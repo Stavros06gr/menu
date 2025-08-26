@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Emission Controls</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Emission Controls</h1>
+
+    <img src="image.jpg" alt="Emission Control System Diagram" />
+
+    <p id="intro">
+      Emission control systems reduce harmful pollutants produced by the engine. They include devices like the catalytic converter, EGR valve, oxygen sensors, and evaporative control system.
+    </p>
+
+    <h2 id="mech">Emission Control Function</h2>
+    <ul id="mechList">
+      <li><strong>Catalytic Converter:</strong> Converts harmful gases into less harmful emissions.</li>
+      <li><strong>Oxygen Sensors:</strong> Monitor exhaust gases to optimize fuel-air mixture.</li>
+      <li><strong>EGR Valve:</strong> Recirculates exhaust gases to reduce nitrogen oxides (NOx).</li>
+      <li><strong>Evaporative Control:</strong> Prevents fuel vapors from escaping into the atmosphere.</li>
+    </ul>
+
+    <h2 id="comp">Key Components</h2>
+    <ul id="compList">
+      <li><strong>Catalytic Converter:</strong> Cleans exhaust gases before release.</li>
+      <li><strong>Oxygen Sensors:</strong> Help maintain efficient engine operation and emission control.</li>
+      <li><strong>EGR Valve:</strong> Reduces combustion temperatures and NOx emissions.</li>
+      <li><strong>Charcoal Canister:</strong> Stores fuel vapors for later combustion.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Emission Controls",
+      intro: "Emission control systems reduce harmful pollutants produced by the engine. They include devices like the catalytic converter, EGR valve, oxygen sensors, and evaporative control system.",
+      mech: "Emission Control Function",
+      mechList: `
+        <li><strong>Catalytic Converter:</strong> Converts harmful gases into less harmful emissions.</li>
+        <li><strong>Oxygen Sensors:</strong> Monitor exhaust gases to optimize fuel-air mixture.</li>
+        <li><strong>EGR Valve:</strong> Recirculates exhaust gases to reduce nitrogen oxides (NOx).</li>
+        <li><strong>Evaporative Control:</strong> Prevents fuel vapors from escaping into the atmosphere.</li>`,
+      comp: "Key Components",
+      compList: `
+        <li><strong>Catalytic Converter:</strong> Cleans exhaust gases before release.</li>
+        <li><strong>Oxygen Sensors:</strong> Help maintain efficient engine operation and emission control.</li>
+        <li><strong>EGR Valve:</strong> Reduces combustion temperatures and NOx emissions.</li>
+        <li><strong>Charcoal Canister:</strong> Stores fuel vapors for later combustion.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Ελέγχου Εκπομπών",
+      intro: "Τα συστήματα ελέγχου εκπομπών μειώνουν τους επιβλαβείς ρύπους που παράγει ο κινητήρας. Περιλαμβάνουν τον καταλύτη, τη βαλβίδα EGR, τους αισθητήρες οξυγόνου και το σύστημα ελέγχου εξατμιζόμενων αερίων.",
+      mech: "Λειτουργία Συστήματος Εκπομπών",
+      mechList: `
+        <li><strong>Καταλύτης:</strong> Μετατρέπει τα επιβλαβή αέρια σε λιγότερο επιβλαβείς εκπομπές.</li>
+        <li><strong>Αισθητήρες Οξυγόνου:</strong> Παρακολουθούν τα καυσαέρια για βελτιστοποίηση του μείγματος καυσίμου-αέρα.</li>
+        <li><strong>Βαλβίδα EGR:</strong> Επανακυκλοφορεί καυσαέρια για μείωση των οξειδίων του αζώτου (NOx).</li>
+        <li><strong>Σύστημα Ελέγχου Εξάτμισης:</strong> Εμποδίζει τη διαφυγή ατμών καυσίμου στην ατμόσφαιρα.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Καταλύτης:</strong> Καθαρίζει τα καυσαέρια πριν την έξοδό τους.</li>
+        <li><strong>Αισθητήρες Οξυγόνου:</strong> Συμβάλλουν στην αποτελεσματική λειτουργία του κινητήρα και στον έλεγχο των εκπομπών.</li>
+        <li><strong>Βαλβίδα EGR:</strong> Μειώνει τη θερμοκρασία καύσης και τις εκπομπές NOx.</li>
+        <li><strong>Φίλτρο Άνθρακα:</strong> Αποθηκεύει ατμούς καυσίμου για μελλοντική καύση.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

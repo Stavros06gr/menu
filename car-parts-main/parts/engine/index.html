@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Engine - Internal Combustion</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Engine: Internal Combustion</h1>
+
+    <img src="image.jpg" alt="4-Stroke Engine Diagram">
+
+    <p id="intro">
+      The internal combustion engine (ICE) is a type of engine that burns fuel and air inside the engine cylinders, creating a high-pressure force that drives the pistons. This process occurs in four basic stages—Intake, Compression, Power, and Exhaust—across the Otto cycle (for gasoline) or Diesel cycle (for diesel engines). These engines power most vehicles worldwide, converting chemical energy into mechanical energy to propel the vehicle.
+    </p>
+
+    <h2 id="mech">Mechanical Process</h2>
+    <ul id="mechList">
+      <li><strong>Intake:</strong> The intake valve opens, and the piston moves down, drawing a mixture of air and fuel into the combustion chamber.</li>
+      <li><strong>Compression:</strong> The intake valve closes, and the piston moves up, compressing the air-fuel mixture. The compression increases the temperature and pressure of the mixture.</li>
+      <li><strong>Combustion:</strong> A spark from the spark plug ignites the compressed mixture, causing a small explosion that forces the piston downward. This provides the mechanical force that powers the engine.</li>
+      <li><strong>Exhaust:</strong> The exhaust valve opens, and the piston moves up again to expel the combustion gases out of the cylinder through the exhaust valve.</li>
+    </ul>
+
+    <h2 id="comp">Core Components</h2>
+    <ul id="compList">
+      <li><strong>Pistons:</strong> Metal components that move up and down within the engine cylinder, converting the pressure from combustion into mechanical energy.</li>
+      <li><strong>Crankshaft:</strong> A rotating shaft that is connected to the pistons. It converts the linear motion of the pistons into rotational motion, which drives the vehicle’s wheels.</li>
+      <li><strong>Camshaft:</strong> A shaft that controls the opening and closing of the intake and exhaust valves, ensuring that the engine operates efficiently and at the right time.</li>
+      <li><strong>Spark Plug:</strong> In gasoline engines, the spark plug ignites the air-fuel mixture at the correct time during the compression stroke, causing combustion.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Engine: Internal Combustion",
+      intro: 'The internal combustion engine (ICE) is a type of engine that burns fuel and air inside the engine cylinders, creating a high-pressure force that drives the pistons. This process occurs in four basic stages—Intake, Compression, Power, and Exhaust—across the Otto cycle (for gasoline) or Diesel cycle (for diesel engines). These engines power most vehicles worldwide, converting chemical energy into mechanical energy to propel the vehicle.',
+      mech: "Mechanical Process",
+      mechList: `
+        <li><strong>Intake:</strong> The intake valve opens, and the piston moves down, drawing a mixture of air and fuel into the combustion chamber.</li>
+        <li><strong>Compression:</strong> The intake valve closes, and the piston moves up, compressing the air-fuel mixture. The compression increases the temperature and pressure of the mixture.</li>
+        <li><strong>Combustion:</strong> A spark from the spark plug ignites the compressed mixture, causing a small explosion that forces the piston downward. This provides the mechanical force that powers the engine.</li>
+        <li><strong>Exhaust:</strong> The exhaust valve opens, and the piston moves up again to expel the combustion gases out of the cylinder through the exhaust valve.</li>`,
+      comp: "Core Components",
+      compList: `
+        <li><strong>Pistons:</strong> Metal components that move up and down within the engine cylinder, converting the pressure from combustion into mechanical energy.</li>
+        <li><strong>Crankshaft:</strong> A rotating shaft that is connected to the pistons. It converts the linear motion of the pistons into rotational motion, which drives the vehicle’s wheels.</li>
+        <li><strong>Camshaft:</strong> A shaft that controls the opening and closing of the intake and exhaust valves, ensuring that the engine operates efficiently and at the right time.</li>
+        <li><strong>Spark Plug:</strong> In gasoline engines, the spark plug ignites the air-fuel mixture at the correct time during the compression stroke, causing combustion.</li>`
+    };
+
+    const greekTexts = {
+      title: "Κινητήρας: Εσωτερικής Καύσης",
+      intro: 'Ο κινητήρας εσωτερικής καύσης (ICE) είναι ένας τύπος κινητήρα που καίει καύσιμο και αέρα μέσα στους κυλίνδρους του κινητήρα, δημιουργώντας μια υψηλή πίεση που κινεί τα έμβολα. Αυτή η διαδικασία συμβαίνει σε τέσσερα βασικά στάδια — Εισαγωγή, Συμπίεση, Ικανότητα και Εξαγωγή — σύμφωνα με τον κύκλο Otto (για βενζίνη) ή τον κύκλο Diesel (για πετρελαιοκινητήρες). Αυτοί οι κινητήρες κινούν τα περισσότερα οχήματα παγκοσμίως, μετατρέποντας τη χημική ενέργεια σε μηχανική ενέργεια για να προωθήσουν το όχημα.',
+      mech: "Μηχανική Διαδικασία",
+      mechList: `
+        <li><strong>Εισαγωγή:</strong> Η βαλβίδα εισαγωγής ανοίγει και το έμβολο κινείται προς τα κάτω, τραβώντας ένα μείγμα αέρα και καυσίμου στον θάλαμο καύσης.</li>
+        <li><strong>Συμπίεση:</strong> Η βαλβίδα εισαγωγής κλείνει και το έμβολο κινείται προς τα επάνω, συμπιέζοντας το μείγμα αέρα και καυσίμου. Η συμπίεση αυξάνει τη θερμοκρασία και την πίεση του μείγματος.</li>
+        <li><strong>Καύση:</strong> Ένα σπινθηριστής από το μπουζί ανάβει το συμπιεσμένο μείγμα, προκαλώντας μια μικρή έκρηξη που ωθεί το έμβολο προς τα κάτω. Αυτό παρέχει την μηχανική δύναμη που κινεί τον κινητήρα.</li>
+        <li><strong>Εξαγωγή:</strong> Η βαλβίδα εξαγωγής ανοίγει και το έμβολο κινείται προς τα επάνω για να εκτοξεύσει τα καυσαέρια από τον κύλινδρο μέσω της βαλβίδας εξαγωγής.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Έμβολα:</strong> Μεταλλικά μέρη που κινούνται πάνω και κάτω στον κύλινδρο του κινητήρα, μετατρέποντας την πίεση από την καύση σε μηχανική ενέργεια.</li>
+        <li><strong>Στροφαλοφόρος άξονας:</strong> Ένας περιστρεφόμενος άξονας που συνδέεται με τα έμβολα. Μετατρέπει την γραμμική κίνηση των εμβόλων σε περιστροφική κίνηση, η οποία κινεί τους τροχούς του οχήματος.</li>
+        <li><strong>Εκκεντροφόρος άξονας:</strong> Ένας άξονας που ελέγχει το άνοιγμα και το κλείσιμο των βαλβίδων εισαγωγής/εξαγωγής, διασφαλίζοντας ότι ο κινητήρας λειτουργεί αποτελεσματικά και στο σωστό χρόνο.</li>
+        <li><strong>Μπουζί:</strong> Στους κινητήρες βενζίνης, το μπουζί ανάβει το μείγμα αέρα και καυσίμου τη σωστή στιγμή κατά τη διάρκεια της συμπίεσης, προκαλώντας την καύση.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

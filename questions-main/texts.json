@@ -1,0 +1,609 @@
+[
+    {
+      "question": "Do fish cough?",
+      "answer": "No, fish do not cough. They do not have a diaphragm, so they cannot cough like humans do. However, they can expel air or water from their gills to clear debris.",
+      "question_gr": "Βήχουν τα ψάρια;",
+      "answer_gr": "Όχι, τα ψάρια δεν βήχουν. Δεν έχουν διάφραγμα, οπότε δεν μπορούν να βήξουν όπως οι άνθρωποι. Ωστόσο, μπορούν να εκπνεύσουν αέρα ή νερό από τα βράγχιά τους για να καθαρίσουν τα συντρίμμια."
+    },
+    {
+      "question": "Why is the sky blue?",
+      "answer": "The sky appears blue because of a phenomenon called Rayleigh scattering. When sunlight hits the Earth's atmosphere, it scatters in all directions. Blue light is scattered more than other colors because it travels in shorter, smaller waves.",
+      "question_gr": "Γιατί είναι μπλε ο ουρανός;",
+      "answer_gr": "Ο ουρανός φαίνεται μπλε λόγω ενός φαινομένου που ονομάζεται διάσπαση Rayleigh. Όταν το ηλιακό φως χτυπά την ατμόσφαιρα της Γης, διασκορπίζεται σε όλες τις κατευθύνσεις. Το μπλε φως διασκορπίζεται περισσότερο από τα άλλα χρώματα, επειδή ταξιδεύει σε μικρότερες, μικρότερες κυματομορφές."
+    },
+    {
+      "question": "Can dogs see colors?",
+      "answer": "Yes, but not in the same way humans do. Dogs have dichromatic vision, which means they can see some colors, but not all. They primarily see shades of blue and yellow, but red and green are not distinguishable to them.",
+      "question_gr": "Βλέπουν τα σκυλιά χρώματα;",
+      "answer_gr": "Ναι, αλλά όχι με τον ίδιο τρόπο που βλέπουν οι άνθρωποι. Τα σκυλιά έχουν διχρωματική όραση, που σημαίνει ότι μπορούν να δουν κάποια χρώματα, αλλά όχι όλα. Βλέπουν κυρίως αποχρώσεις του μπλε και του κίτρινου, αλλά το κόκκινο και το πράσινο δεν είναι διακριτά γι' αυτά."
+    },
+    {
+      "question": "How does gravity work?",
+      "answer": "Gravity is a force that attracts objects with mass toward each other. The more massive an object, the stronger its gravitational pull. On Earth, gravity pulls everything toward the ground, keeping us anchored to the surface.",
+      "question_gr": "Πώς λειτουργεί η βαρύτητα;",
+      "answer_gr": "Η βαρύτητα είναι μια δύναμη που προσελκύει τα αντικείμενα με μάζα προς το ένα το άλλο. Όσο πιο μαζικό είναι ένα αντικείμενο, τόσο πιο ισχυρή είναι η βαρυτική του έλξη. Στη Γη, η βαρύτητα τραβάει τα πάντα προς το έδαφος, κρατώντας μας προσκολλημένους στην επιφάνεια."
+    },
+    {
+      "question": "Can plants feel pain?",
+      "answer": "Plants do not feel pain in the same way animals do because they lack a nervous system. However, they can respond to environmental stimuli, such as light or touch, and can release chemicals when under stress, signaling other plants or deterring herbivores.",
+      "question_gr": "Μπορούν τα φυτά να νιώθουν πόνο;",
+      "answer_gr": "Τα φυτά δεν νιώθουν πόνο με τον ίδιο τρόπο που τα ζώα νιώθουν γιατί δεν έχουν νευρικό σύστημα. Ωστόσο, μπορούν να αντιδρούν σε περιβαλλοντικά ερεθίσματα, όπως το φως ή η αφή, και να εκλύουν χημικές ουσίες όταν είναι υπό πίεση, προειδοποιώντας άλλα φυτά ή αποθαρρύνοντας τα φυτοφάγα."
+    },
+    {
+      "question": "Do cats purr when they are happy?",
+      "answer": "Cats do purr when they are content or relaxed, but they can also purr when they are in pain, frightened, or anxious. Purring is a way for cats to self-soothe or communicate with others.",
+      "question_gr": "Γουργουρίζουν οι γάτες όταν είναι χαρούμενες;",
+      "answer_gr": "Οι γάτες γουργουρίζουν όταν είναι ικανοποιημένες ή χαλαρές, αλλά μπορούν επίσης να γουργουρίζουν όταν πονάνε, φοβούνται ή είναι αγχωμένες. Το γουργούρισμα είναι ένας τρόπος για τις γάτες να αυτοκαταπραΰνουν ή να επικοινωνούν με άλλους."
+    },
+    {
+      "question": "Why do we have to sleep?",
+      "answer": "Sleep is essential for our bodies to rest and repair. During sleep, our brains process memories, our immune system gets stronger, and our bodies recover from the wear and tear of daily activities.",
+      "question_gr": "Γιατί πρέπει να κοιμόμαστε;",
+      "answer_gr": "Ο ύπνος είναι απαραίτητος για το σώμα μας για να ξεκουραστεί και να επισκευαστεί. Κατά τη διάρκεια του ύπνου, ο εγκέφαλός μας επεξεργάζεται τις μνήμες, το ανοσοποιητικό μας σύστημα ενισχύεται και το σώμα μας αναρρώνει από τη φθορά της καθημερινής δραστηριότητας."
+    },
+    {
+      "question": "Do birds sleep while flying?",
+      "answer": "Some birds can sleep while flying, but not in the same way humans do. Birds like migratory species can enter a state of rest called 'unihemispheric slow-wave sleep,' where one half of their brain stays active while the other rests.",
+      "question_gr": "Κοιμούνται τα πουλιά ενώ πετούν;",
+      "answer_gr": "Ορισμένα πουλιά μπορούν να κοιμούνται ενώ πετούν, αλλά όχι με τον ίδιο τρόπο που κοιμούνται οι άνθρωποι. Πουλιά όπως τα μεταναστευτικά είδη μπορούν να εισέλθουν σε μια κατάσταση ξεκούρασης που ονομάζεται 'μονοημισφαιρικός ύπνος αργών κυμάτων', όπου το ένα ημισφαίριο του εγκεφάλου τους παραμένει ενεργό ενώ το άλλο ξεκουράζεται."
+    },
+    {
+      "question": "How do planes stay in the air?",
+      "answer": "Planes stay in the air due to the principles of aerodynamics. The wings are designed to create a pressure difference, with air moving faster over the top of the wing than underneath. This difference in pressure generates lift, which helps the plane overcome gravity.",
+      "question_gr": "Πώς μένουν τα αεροπλάνα στον αέρα;",
+      "answer_gr": "Τα αεροπλάνα μένουν στον αέρα λόγω των αρχών της αεροδυναμικής. Τα φτερά είναι σχεδιασμένα για να δημιουργούν μια διαφορά πίεσης, με τον αέρα να κινείται πιο γρήγορα πάνω από το φτερό από ό,τι από κάτω. Αυτή η διαφορά πίεσης δημιουργεί ανύψωση, η οποία βοηθά το αεροπλάνο να ξεπεράσει τη βαρύτητα."
+    },
+    {
+      "question": "Can humans breathe underwater?",
+      "answer": "Humans cannot breathe underwater without assistance. Our lungs are designed to process air, not water. However, with the use of equipment like scuba tanks, we can breathe underwater for extended periods.",
+      "question_gr": "Μπορούν οι άνθρωποι να αναπνέουν κάτω από το νερό;",
+      "answer_gr": "Οι άνθρωποι δεν μπορούν να αναπνέουν κάτω από το νερό χωρίς βοήθεια. Οι πνεύμονές μας είναι σχεδιασμένοι για να επεξεργάζονται αέρα, όχι νερό. Ωστόσο, με τη χρήση εξοπλισμού όπως τα φιάλες αναπνοής, μπορούμε να αναπνέουμε κάτω από το νερό για παρατεταμένες περιόδους."
+    },
+    {
+      "question": "Why do cats have whiskers?",
+      "answer": "Whiskers are highly sensitive tactile hairs that help cats measure the width of openings, detect nearby objects, and even assess whether they can fit through tight spaces. They are also useful for balance and orientation.",
+      "question_gr": "Γιατί οι γάτες έχουν μουστάκια;",
+      "answer_gr": "Τα μουστάκια είναι εξαιρετικά ευαίσθητες τρίχες που βοηθούν τις γάτες να μετρούν το πλάτος των ανοιγμάτων, να ανιχνεύουν κοντινά αντικείμενα και να εκτιμούν αν μπορούν να περάσουν από στενά μέρη. Είναι επίσης χρήσιμα για την ισορροπία και τον προσανατολισμό."
+    },
+    {
+      "question": "Why do we dream?",
+      "answer": "Dreams are believed to be a way for our brains to process emotions, memories, and unresolved issues. They may also help us problem-solve or rehearse actions. However, the exact purpose of dreaming is still not fully understood.",
+      "question_gr": "Γιατί ονειρευόμαστε;",
+      "answer_gr": "Πιστεύεται ότι τα όνειρα είναι ένας τρόπος για τον εγκέφαλό μας να επεξεργάζεται συναισθήματα, αναμνήσεις και άλυτα ζητήματα. Μπορούν επίσης να μας βοηθήσουν να λύσουμε προβλήματα ή να επαναλάβουμε ενέργειες. Ωστόσο, ο ακριβής σκοπός των ονείρων δεν είναι ακόμη πλήρως κατανοητός."
+    },
+    {
+      "question": "Why do we hiccup?",
+      "answer": "Hiccups occur when the diaphragm contracts involuntarily, causing a sudden closure of the vocal cords. The exact cause of hiccups is often unknown, but they can be triggered by factors like overeating, excitement, or even stress.",
+      "question_gr": "Γιατί κάνουμε βήχα;",
+      "answer_gr": "Ο βήχας συμβαίνει όταν το διάφραγμα συστέλλεται ακούσια, προκαλώντας ξαφνικό κλείσιμο των φωνητικών χορδών. Η ακριβής αιτία του βήχα είναι συχνά άγνωστη, αλλά μπορεί να προκληθεί από παράγοντες όπως η υπερφαγία, ο ενθουσιασμός ή ακόμη και το άγχος."
+    },
+    {
+      "question": "Can we live without the sun?",
+      "answer": "No, life on Earth depends on the Sun for energy. Plants need sunlight for photosynthesis, and animals rely on plants for food. Without the Sun, Earth would become too cold, and life would not survive.",
+      "question_gr": "Μπορούμε να ζήσουμε χωρίς τον ήλιο;",
+      "answer_gr": "Όχι, η ζωή στη Γη εξαρτάται από τον Ήλιο για ενέργεια. Τα φυτά χρειάζονται το ηλιακό φως για τη φωτοσύνθεση, και τα ζώα εξαρτώνται από τα φυτά για τροφή. Χωρίς τον ήλιο, η Γη θα γινόταν πολύ κρύα και η ζωή δεν θα επιβίωνε."
+    },
+    {
+      "question": "Can sharks get cancer?",
+      "answer": "Sharks are less likely to develop cancer compared to other animals. They have a highly effective immune system that may help protect them from cancerous growths, although researchers are still studying this phenomenon.",
+      "question_gr": "Μπορούν οι καρχαρίες να αποκτήσουν καρκίνο;",
+      "answer_gr": "Οι καρχαρίες είναι λιγότερο πιθανό να αναπτύξουν καρκίνο σε σχέση με άλλα ζώα. Έχουν ένα εξαιρετικά αποτελεσματικό ανοσοποιητικό σύστημα που μπορεί να τους βοηθήσει να προστατευτούν από καρκινικές αναπτύξεις, αν και οι ερευνητές συνεχίζουν να μελετούν αυτό το φαινόμενο."
+    },
+    {
+      "question": "Why do we have fingerprints?",
+      "answer": "Fingerprints are unique patterns formed by the ridges and grooves on our fingers. They help improve grip and tactile sensitivity, and they are also used for identification purposes because no two people have the same fingerprint pattern.",
+      "question_gr": "Γιατί έχουμε δακτυλικά αποτυπώματα;",
+      "answer_gr": "Τα δακτυλικά αποτυπώματα είναι μοναδικά μοτίβα που σχηματίζονται από τις ραβδώσεις και τις αυλακώσεις στα δάχτυλά μας. Βοηθούν στη βελτίωση της λαβής και της αφής, και χρησιμοποιούνται επίσης για σκοπούς αναγνώρισης, καθώς κανείς δεν έχει το ίδιο μοτίβο δακτυλικών αποτυπωμάτων."
+    },
+    {
+        "question": "Can trees communicate with each other?",
+        "answer": "Yes, trees can communicate through underground networks of fungi known as the 'Wood Wide Web.'",
+        "question_gr": "Μπορούν τα δέντρα να επικοινωνούν μεταξύ τους;",
+        "answer_gr": "Ναι, τα δέντρα μπορούν να επικοινωνούν μέσω υπόγειων δικτύων μυκήτων γνωστά ως 'Δασικό Διαδίκτυο'."
+    },
+    {
+        "question": "Why do leaves change color in autumn?",
+        "answer": "Leaves change color due to the breakdown of chlorophyll, revealing other pigments.",
+        "question_gr": "Γιατί αλλάζουν χρώμα τα φύλλα το φθινόπωρο;",
+        "answer_gr": "Τα φύλλα αλλάζουν χρώμα λόγω της αποδόμησης της χλωροφύλλης, που αποκαλύπτει άλλες χρωστικές."
+    },
+    {
+        "question": "Do whales sleep?",
+        "answer": "Yes, whales sleep by shutting down one hemisphere of their brain at a time.",
+        "question_gr": "Κοιμούνται οι φάλαινες;",
+        "answer_gr": "Ναι, οι φάλαινες κοιμούνται κλείνοντας το ένα ημισφαίριο του εγκεφάλου τους τη φορά."
+    },
+    {
+        "question": "Why do onions make you cry?",
+        "answer": "Onions release sulfur compounds that irritate the eyes when cut.",
+        "question_gr": "Γιατί τα κρεμμύδια σε κάνουν να κλαις;",
+        "answer_gr": "Τα κρεμμύδια απελευθερώνουν ενώσεις θείου που ερεθίζουν τα μάτια όταν κόβονται."
+    },
+    {
+        "question": "Can lightning strike the same place twice?",
+        "answer": "Yes, lightning can and often does strike the same place multiple times.",
+        "question_gr": "Μπορεί ο κεραυνός να χτυπήσει το ίδιο μέρος δύο φορές;",
+        "answer_gr": "Ναι, ο κεραυνός μπορεί και συχνά χτυπά το ίδιο μέρος πολλές φορές."
+    },
+    {
+        "question": "Why do zebras have stripes?",
+        "answer": "Zebra stripes may help deter flies and regulate body temperature, and they may also serve for camouflage or social purposes.",
+        "question_gr": "Γιατί οι ζέβρες έχουν ρίγες;",
+        "answer_gr": "Οι ρίγες στις ζέβρες μπορεί να αποτρέπουν τις μύγες, να ρυθμίζουν τη θερμοκρασία του σώματος και να χρησιμεύουν για καμουφλάζ ή κοινωνικούς σκοπούς."
+    },
+    {
+        "question": "What causes rainbows?",
+        "answer": "Rainbows are caused by the refraction, reflection, and dispersion of light in water droplets, resulting in a spectrum of light appearing in the sky.",
+        "question_gr": "Τι προκαλεί τα ουράνια τόξα;",
+        "answer_gr": "Τα ουράνια τόξα προκαλούνται από τη διάθλαση, την αντανάκλαση και τη διασπορά του φωτός σε σταγόνες νερού, δημιουργώντας ένα φάσμα φωτός στον ουρανό."
+    },
+    {
+        "question": "Do penguins have knees?",
+        "answer": "Yes, penguins have knees. Their legs are covered in feathers, but underneath they have a structure similar to human legs.",
+        "question_gr": "Έχουν τα πιγκουίνοι γόνατα;",
+        "answer_gr": "Ναι, οι πιγκουίνοι έχουν γόνατα. Τα πόδια τους καλύπτονται με φτερά, αλλά από κάτω έχουν δομή παρόμοια με των ανθρώπων."
+    },
+    {
+        "question": "Can sound travel through space?",
+        "answer": "No, sound cannot travel through space because it requires a medium like air or water to propagate.",
+        "question_gr": "Μπορεί ο ήχος να ταξιδέψει στο διάστημα;",
+        "answer_gr": "Όχι, ο ήχος δεν μπορεί να ταξιδέψει στο διάστημα γιατί χρειάζεται ένα μέσο όπως ο αέρας ή το νερό για να μεταδοθεί."
+    },
+    {
+        "question": "Why do we yawn?",
+        "answer": "Yawning may help cool the brain and increase alertness, though its exact purpose is still not fully understood.",
+        "question_gr": "Γιατί χασμουριόμαστε;",
+        "answer_gr": "Το χασμουρητό μπορεί να βοηθήσει στην ψύξη του εγκεφάλου και στην αύξηση της εγρήγορσης, αν και ο ακριβής σκοπός του δεν είναι πλήρως κατανοητός."
+    },
+    {
+        "question": "How do magnets work?",
+        "answer": "Magnets work by creating a magnetic field that attracts certain materials like iron.",
+        "question_gr": "Πώς λειτουργούν οι μαγνήτες;",
+        "answer_gr": "Οι μαγνήτες λειτουργούν δημιουργώντας ένα μαγνητικό πεδίο που έλκει ορισμένα υλικά όπως ο σίδηρος."
+    },
+    {
+        "question": "Why do giraffes have long necks?",
+        "answer": "Giraffes have long necks to reach high leaves and possibly to compete for mates through necking battles.",
+        "question_gr": "Γιατί οι καμηλοπαρδάλεις έχουν μακριούς λαιμούς;",
+        "answer_gr": "Οι καμηλοπαρδάλεις έχουν μακριούς λαιμούς για να φτάνουν ψηλά φύλλα και ίσως για να ανταγωνίζονται για ταίρι μέσω 'μαχών λαιμού'."
+    },
+    {
+        "question": "Can humans grow back lost limbs?",
+        "answer": "Humans cannot naturally regrow limbs, although some regeneration like skin and liver repair is possible.",
+        "question_gr": "Μπορούν οι άνθρωποι να αναπτύξουν ξανά χαμένα άκρα;",
+        "answer_gr": "Οι άνθρωποι δεν μπορούν φυσικά να αναπτύξουν ξανά άκρα, αν και είναι δυνατή κάποια αναγέννηση όπως στο δέρμα και το ήπαρ."
+    },
+    {
+        "question": "What is the coldest place on Earth?",
+        "answer": "The coldest place on Earth is Antarctica, where temperatures can drop below -89°C.",
+        "question_gr": "Ποιο είναι το πιο κρύο μέρος στη Γη;",
+        "answer_gr": "Το πιο κρύο μέρος στη Γη είναι η Ανταρκτική, όπου οι θερμοκρασίες μπορούν να πέσουν κάτω από -89°C."
+    },
+    {
+        "question": "Do spiders sleep?",
+        "answer": "Spiders do not sleep like humans but enter a state of rest and inactivity.",
+        "question_gr": "Κοιμούνται οι αράχνες;",
+        "answer_gr": "Οι αράχνες δεν κοιμούνται όπως οι άνθρωποι αλλά εισέρχονται σε κατάσταση ξεκούρασης και αδράνειας."
+    },
+    {
+        "question": "Why is the ocean salty?",
+        "answer": "The ocean is salty due to minerals and salts washed from land into the sea over millions of years.",
+        "question_gr": "Γιατί είναι αλμυρή η θάλασσα;",
+        "answer_gr": "Η θάλασσα είναι αλμυρή λόγω των μετάλλων και αλάτων που μεταφέρονται από τη στεριά στη θάλασσα επί εκατομμύρια χρόνια."
+    },
+    {
+        "question": "Can birds fly backwards?",
+        "answer": "Only hummingbirds can truly fly backwards due to their unique wing structure.",
+        "question_gr": "Μπορούν τα πουλιά να πετάξουν προς τα πίσω;",
+        "answer_gr": "Μόνο τα κολιμπρί μπορούν πραγματικά να πετάξουν προς τα πίσω χάρη στη μοναδική δομή των φτερών τους."
+    },
+    {
+        "question": "How deep is the deepest part of the ocean?",
+        "answer": "The deepest part of the ocean is the Mariana Trench, which is about 11,000 meters deep.",
+        "question_gr": "Πόσο βαθύ είναι το πιο βαθύ σημείο του ωκεανού;",
+        "answer_gr": "Το πιο βαθύ σημείο του ωκεανού είναι η Τάφρος των Μαριανών, με βάθος περίπου 11.000 μέτρα."
+    },
+    {
+        "question": "Can ants lift more than their body weight?",
+        "answer": "Yes, ants can lift up to 50 times their own body weight.",
+        "question_gr": "Μπορούν τα μυρμήγκια να σηκώσουν βάρος μεγαλύτερο από το σώμα τους;",
+        "answer_gr": "Ναι, τα μυρμήγκια μπορούν να σηκώσουν έως και 50 φορές το βάρος του σώματός τους."
+    },
+    {
+        "question": "Do stars move?",
+        "answer": "Yes, stars move through space, but their movement is often too slow to notice with the naked eye.",
+        "question_gr": "Κινούνται τα αστέρια;",
+        "answer_gr": "Ναι, τα αστέρια κινούνται στο διάστημα, αλλά η κίνησή τους είναι συνήθως πολύ αργή για να την αντιληφθεί το ανθρώπινο μάτι."
+    },
+    {
+        "question": "Do bees sleep?",
+        "answer": "Yes, bees do sleep. They have periods of rest where their body becomes less active.",
+        "question_gr": "Κοιμούνται οι μέλισσες;",
+        "answer_gr": "Ναι, οι μέλισσες κοιμούνται. Έχουν περιόδους ανάπαυσης όπου το σώμα τους γίνεται λιγότερο ενεργό."
+    },
+    {
+        "question": "Can jellyfish live forever?",
+        "answer": "Some species of jellyfish, like Turritopsis dohrnii, are capable of reverting to earlier stages of life, potentially making them biologically immortal.",
+        "question_gr": "Μπορούν οι μέδουσες να ζήσουν για πάντα;",
+        "answer_gr": "Ορισμένα είδη μέδουσας, όπως η Turritopsis dohrnii, μπορούν να επιστρέψουν σε προγενέστερα στάδια ζωής, γεγονός που τις καθιστά ενδεχομένως βιολογικά αθάνατες."
+    },
+    {
+        "question": "Do snakes have ears?",
+        "answer": "Snakes do not have external ears, but they can detect vibrations and low-frequency sounds through their jawbones.",
+        "question_gr": "Έχουν αυτιά τα φίδια;",
+        "answer_gr": "Τα φίδια δεν έχουν εξωτερικά αυτιά, αλλά μπορούν να ανιχνεύουν δονήσεις και χαμηλές συχνότητες ήχου μέσω των γνάθων τους."
+    },
+    {
+        "question": "Can dolphins recognize themselves in mirrors?",
+        "answer": "Yes, dolphins are among the few animals that have demonstrated self-recognition in mirrors.",
+        "question_gr": "Μπορούν τα δελφίνια να αναγνωρίσουν τον εαυτό τους σε καθρέφτες;",
+        "answer_gr": "Ναι, τα δελφίνια είναι από τα λίγα ζώα που έχουν δείξει αυτοαναγνώριση σε καθρέφτες."
+    },
+    {
+        "question": "Do whales have belly buttons?",
+        "answer": "Yes, whales are mammals and have belly buttons where the umbilical cord was attached.",
+        "question_gr": "Έχουν οι φάλαινες αφαλό;",
+        "answer_gr": "Ναι, οι φάλαινες είναι θηλαστικά και έχουν αφαλό στο σημείο που ήταν προσκολλημένος ο ομφάλιος λώρος."
+    },
+    {
+        "question": "Can camels swim?",
+        "answer": "Camels can swim, but they are not natural swimmers and rarely do so.",
+        "question_gr": "Μπορούν οι καμήλες να κολυμπήσουν;",
+        "answer_gr": "Οι καμήλες μπορούν να κολυμπήσουν, αλλά δεν είναι φυσικοί κολυμβητές και σπάνια το κάνουν."
+    },
+    {
+        "question": "Do mushrooms breathe?",
+        "answer": "Yes, mushrooms take in oxygen and release carbon dioxide like animals.",
+        "question_gr": "Αναπνέουν τα μανιτάρια;",
+        "answer_gr": "Ναι, τα μανιτάρια προσλαμβάνουν οξυγόνο και απελευθερώνουν διοξείδιο του άνθρακα όπως τα ζώα."
+    },
+    {
+        "question": "Why do some animals hibernate?",
+        "answer": "Animals hibernate to conserve energy during cold months when food is scarce.",
+        "question_gr": "Γιατί κάποια ζώα πέφτουν σε χειμερία νάρκη;",
+        "answer_gr": "Τα ζώα πέφτουν σε χειμερία νάρκη για να εξοικονομήσουν ενέργεια τους κρύους μήνες όταν η τροφή είναι σπάνια."
+    },
+    {
+        "question": "Do bananas have seeds?",
+        "answer": "Yes, bananas have small seeds, but commercial varieties have tiny, non-functional ones.",
+        "question_gr": "Έχουν οι μπανάνες σπόρους;",
+        "answer_gr": "Ναι, οι μπανάνες έχουν μικρούς σπόρους, αλλά οι εμπορικές ποικιλίες έχουν μικροσκοπικούς και μη λειτουργικούς."
+    },
+    {
+        "question": "Can frogs freeze and still live?",
+        "answer": "Yes, some frogs can survive being frozen by producing antifreeze-like substances.",
+        "question_gr": "Μπορούν τα βατράχια να παγώσουν και να ζήσουν;",
+        "answer_gr": "Ναι, κάποια βατράχια μπορούν να επιβιώσουν από το πάγωμα παράγοντας ουσίες παρόμοιες με αντιψυκτικά."
+    },
+    {
+        "question": "Why is yawning contagious?",
+        "answer": "Yawning may be contagious due to social bonding and empathy mechanisms.",
+        "question_gr": "Γιατί το χασμουρητό είναι μεταδοτικό;",
+        "answer_gr": "Το χασμουρητό μπορεί να είναι μεταδοτικό λόγω μηχανισμών κοινωνικής σύνδεσης και ενσυναίσθησης."
+    },
+    {
+        "question": "Do fish sleep?",
+        "answer": "Fish do rest, often reducing activity and metabolism, but they don't sleep like humans.",
+        "question_gr": "Κοιμούνται τα ψάρια;",
+        "answer_gr": "Τα ψάρια ξεκουράζονται, μειώνοντας τη δραστηριότητα και τον μεταβολισμό, αλλά δεν κοιμούνται όπως οι άνθρωποι."
+    },
+    {
+        "question": "Can octopuses change color?",
+        "answer": "Yes, octopuses can change color using special cells called chromatophores.",
+        "question_gr": "Μπορούν τα χταπόδια να αλλάξουν χρώμα;",
+        "answer_gr": "Ναι, τα χταπόδια μπορούν να αλλάξουν χρώμα χρησιμοποιώντας ειδικά κύτταρα που ονομάζονται χρωματοφόρα."
+    },
+    {
+        "question": "Why do dogs tilt their heads?",
+        "answer": "Dogs tilt their heads to better hear sounds and read human expressions.",
+        "question_gr": "Γιατί τα σκυλιά γέρνουν το κεφάλι τους;",
+        "answer_gr": "Τα σκυλιά γέρνουν το κεφάλι τους για να ακούσουν καλύτερα ήχους και να διαβάσουν τις εκφράσεις των ανθρώπων."
+    },
+    {
+        "question": "Why do stars twinkle?",
+        "answer": "Stars appear to twinkle because their light is refracted by Earth's turbulent atmosphere.",
+        "question_gr": "Γιατί τρεμοπαίζουν τα αστέρια;",
+        "answer_gr": "Τα αστέρια φαίνονται να τρεμοπαίζουν επειδή το φως τους διαθλάται από την ταραγμένη ατμόσφαιρα της Γης."
+    },
+    {
+        "question": "Can worms regenerate?",
+        "answer": "Some worms, like planarians, can regenerate entire body parts.",
+        "question_gr": "Μπορούν τα σκουλήκια να αναγεννηθούν;",
+        "answer_gr": "Ορισμένα σκουλήκια, όπως τα πλαναριανά, μπορούν να αναγεννήσουν ολόκληρα μέρη του σώματός τους."
+    },
+    {
+        "question": "Do bats see in the dark?",
+        "answer": "Bats can see in low light and also use echolocation to navigate in darkness.",
+        "question_gr": "Βλέπουν οι νυχτερίδες στο σκοτάδι;",
+        "answer_gr": "Οι νυχτερίδες μπορούν να βλέπουν σε χαμηλό φως και χρησιμοποιούν επίσης ηχοεντοπισμό για να προσανατολιστούν στο σκοτάδι."
+    },
+    {
+        "question": "Do crocodiles cry?",
+        "answer": "Crocodiles can produce tears, but not from sadness; it's a biological function.",
+        "question_gr": "Κλαίνε οι κροκόδειλοι;",
+        "answer_gr": "Οι κροκόδειλοι μπορούν να παράγουν δάκρυα, αλλά όχι από λύπη· είναι βιολογική λειτουργία."
+    },
+    {
+        "question": "Can parrots really talk?",
+        "answer": "Parrots mimic human speech sounds but don't understand language like humans do.",
+        "question_gr": "Μπορούν οι παπαγάλοι να μιλάνε πραγματικά;",
+        "answer_gr": "Οι παπαγάλοι μιμούνται ήχους της ανθρώπινης ομιλίας αλλά δεν καταλαβαίνουν τη γλώσσα όπως οι άνθρωποι."
+    },
+    {
+        "question": "Do cows have best friends?",
+        "answer": "Yes, cows form strong bonds with other cows and can have best friends.",
+        "question_gr": "Έχουν οι αγελάδες καλύτερους φίλους;",
+        "answer_gr": "Ναι, οι αγελάδες σχηματίζουν ισχυρούς δεσμούς με άλλες αγελάδες και μπορούν να έχουν καλύτερους φίλους."
+    },
+    {
+        "question": "Why do owls hoot?",
+        "answer": "Owls hoot to communicate with others, especially for mating or marking territory.",
+        "question_gr": "Γιατί οι κουκουβάγιες κάνουν ήχο;",
+        "answer_gr": "Οι κουκουβάγιες κάνουν ήχο για να επικοινωνήσουν με άλλες, κυρίως για ζευγάρωμα ή για να σηματοδοτήσουν την επικράτειά τους."
+    },
+    {
+        "question": "Do sharks have bones?",
+        "answer": "No, sharks have cartilage instead of bones, which makes them lighter and more flexible.",
+        "question_gr": "Έχουν τα καρχαρίες κόκαλα;",
+        "answer_gr": "Όχι, οι καρχαρίες έχουν χόνδρο αντί για κόκαλα, κάτι που τους κάνει ελαφρύτερους και πιο ευέλικτους."
+    },
+    {
+        "question": "Do spiders have brains?",
+        "answer": "Yes, spiders have brains, but their nervous system is quite different from humans, focusing more on instinctive behaviors.",
+        "question_gr": "Έχουν οι αράχνες εγκέφαλο;",
+        "answer_gr": "Ναι, οι αράχνες έχουν εγκέφαλο, αλλά το νευρικό τους σύστημα είναι αρκετά διαφορετικό από των ανθρώπων, επικεντρωμένο περισσότερο στις ενστικτώδεις συμπεριφορές."
+    },
+    {
+        "question": "Do giraffes sleep standing up?",
+        "answer": "Yes, giraffes can sleep while standing, but they sometimes lie down for deep sleep.",
+        "question_gr": "Κοιμούνται οι καμηλοπαρδάλεις όρθιες;",
+        "answer_gr": "Ναι, οι καμηλοπαρδάλεις μπορούν να κοιμούνται όρθιες, αλλά μερικές φορές ξαπλώνουν για βαθύ ύπνο."
+    },
+    {
+        "question": "Do dolphins sleep?",
+        "answer": "Yes, dolphins sleep, but they do so by resting one half of their brain at a time, while the other remains active.",
+        "question_gr": "Κοιμούνται τα δελφίνια;",
+        "answer_gr": "Ναι, τα δελφίνια κοιμούνται, αλλά το κάνουν ξεκουράζοντας το μισό από τον εγκέφαλό τους κάθε φορά, ενώ το άλλο παραμένει ενεργό."
+    },
+    {
+        "question": "Can owls rotate their heads 360 degrees?",
+        "answer": "No, owls can rotate their heads about 270 degrees, not a full 360 degrees.",
+        "question_gr": "Μπορούν οι κουκουβάγιες να γυρίσουν το κεφάλι τους 360 μοίρες;",
+        "answer_gr": "Όχι, οι κουκουβάγιες μπορούν να γυρίσουν το κεφάλι τους περίπου 270 μοίρες, όχι 360 μοίρες."
+    },
+    {
+        "question": "Why do dogs wag their tails?",
+        "answer": "Dogs wag their tails to express emotions, such as happiness, excitement, or even anxiety.",
+        "question_gr": "Γιατί οι σκύλοι κουνάνε την ουρά τους;",
+        "answer_gr": "Οι σκύλοι κουνάνε την ουρά τους για να εκφράσουν συναισθήματα, όπως ευτυχία, ενθουσιασμό ή ακόμα και άγχος."
+    },
+    {
+        "question": "Can fish hear?",
+        "answer": "Yes, fish can hear through vibrations in the water, but they don't have ears like humans.",
+        "question_gr": "Μπορούν τα ψάρια να ακούσουν;",
+        "answer_gr": "Ναι, τα ψάρια μπορούν να ακούσουν μέσω των δονήσεων στο νερό, αλλά δεν έχουν αυτιά όπως οι άνθρωποι."
+    },
+    {
+        "question": "Why do cats like to scratch things?",
+        "answer": "Cats scratch to mark their territory, sharpen their claws, and stretch their muscles.",
+        "question_gr": "Γιατί οι γάτες αρέσκονται να ξύνουν πράγματα;",
+        "answer_gr": "Οι γάτες ξύνουν για να σηματοδοτήσουν την περιοχή τους, να ακονίσουν τα νύχια τους και να τεντώσουν τους μύες τους."
+    },
+    {
+        "question": "Do turtles live forever?",
+        "answer": "No, turtles can live a long time, but they do eventually die, though some species live over 100 years.",
+        "question_gr": "Ζουν οι χελώνες για πάντα;",
+        "answer_gr": "Όχι, οι χελώνες μπορούν να ζήσουν για πολλά χρόνια, αλλά τελικά πεθαίνουν, αν και κάποια είδη ζουν πάνω από 100 χρόνια."
+    },
+    {
+        "question": "Why do bats sleep upside down?",
+        "answer": "Bats sleep upside down because it allows them to take off quickly when they need to fly.",
+        "question_gr": "Γιατί οι νυχτερίδες κοιμούνται ανάποδα;",
+        "answer_gr": "Οι νυχτερίδες κοιμούνται ανάποδα επειδή τους επιτρέπει να απογειώνονται γρήγορα όταν χρειάζεται να πετάξουν."
+    },
+    {
+        "question": "Do penguins fly?",
+        "answer": "No, penguins are flightless birds, but they are excellent swimmers and can 'fly' through the water.",
+        "question_gr": "Πετούν οι πιγκουίνοι;",
+        "answer_gr": "Όχι, οι πιγκουίνοι είναι πουλιά που δεν πετούν, αλλά είναι εξαιρετικοί κολυμβητές και μπορούν να 'πετούν' μέσα στο νερό."
+    },
+    {
+        "question": "Do elephants have great memory?",
+        "answer": "Yes, elephants have excellent memory and can remember people, places, and other elephants for many years.",
+        "question_gr": "Έχουν οι ελέφαντες καλή μνήμη;",
+        "answer_gr": "Ναι, οι ελέφαντες έχουν εξαιρετική μνήμη και μπορούν να θυμούνται ανθρώπους, μέρη και άλλους ελέφαντες για πολλά χρόνια."
+    },
+    {
+        "question": "Why do birds migrate?",
+        "answer": "Birds migrate to find food, better weather conditions, and safer breeding grounds.",
+        "question_gr": "Γιατί μεταναστεύουν τα πουλιά;",
+        "answer_gr": "Τα πουλιά μεταναστεύουν για να βρουν τροφή, καλύτερες καιρικές συνθήκες και ασφαλέστερους τόπους αναπαραγωγής."
+    },
+    {
+        "question": "Can wolves be kept as pets?",
+        "answer": "Wolves are wild animals and are not suitable to be kept as pets due to their strong predatory instincts and large size.",
+        "question_gr": "Μπορούν οι λύκοι να κρατηθούν ως κατοικίδια;",
+        "answer_gr": "Οι λύκοι είναι άγρια ζώα και δεν είναι κατάλληλα να κρατηθούν ως κατοικίδια λόγω των ισχυρών θηρευτικών ενστίκτων τους και του μεγάλου μεγέθους τους."
+    },
+    {
+        "question": "Do snakes have eyelids?",
+        "answer": "No, snakes do not have eyelids, instead, they have a transparent scale that covers and protects their eyes.",
+        "question_gr": "Έχουν οι φίδια βλέφαρα;",
+        "answer_gr": "Όχι, τα φίδια δεν έχουν βλέφαρα, αλλά έχουν μια διαφανή κλίμακα που καλύπτει και προστατεύει τα μάτια τους."
+    },
+    {
+        "question": "Why do some animals have camouflage?",
+        "answer": "Camouflage helps animals blend into their surroundings to avoid predators and increase their chances of survival.",
+        "question_gr": "Γιατί κάποια ζώα έχουν καμουφλάζ;",
+        "answer_gr": "Το καμουφλάζ βοηθά τα ζώα να συγχωνεύονται με το περιβάλλον τους για να αποφύγουν τους θηρευτές και να αυξήσουν τις πιθανότητες επιβίωσής τους."
+    },
+    {
+        "question": "Why do camels have humps?",
+        "answer": "Camels have humps to store fat, which they can convert to water and energy when needed.",
+        "question_gr": "Γιατί οι καμήλες έχουν καμπούρες;",
+        "answer_gr": "Οι καμήλες έχουν καμπούρες για να αποθηκεύουν λίπος, το οποίο μπορούν να μετατρέψουν σε νερό και ενέργεια όταν το χρειάζονται."
+    },
+    {
+        "question": "Can frogs live on land?",
+        "answer": "Yes, frogs can live on land, but they need water for reproduction and to keep their skin moist.",
+        "question_gr": "Μπορούν οι βάτραχοι να ζήσουν στη ξηρά;",
+        "answer_gr": "Ναι, οι βάτραχοι μπορούν να ζήσουν στη ξηρά, αλλά χρειάζονται νερό για την αναπαραγωγή τους και για να κρατήσουν το δέρμα τους υγρό."
+    },
+    {
+        "question": "Do all snakes lay eggs?",
+        "answer": "No, not all snakes lay eggs. Some species give birth to live young.",
+        "question_gr": "Βάζουν όλα τα φίδια αυγά;",
+        "answer_gr": "Όχι, δεν βάζουν όλα τα φίδια αυγά. Ορισμένα είδη γεννούν ζωντανά μικρά."
+    },
+    {
+        "question": "Why do whales sing?",
+        "answer": "Whales sing to communicate with each other, often for mating or navigating through the ocean.",
+        "question_gr": "Γιατί τραγουδούν οι φάλαινες;",
+        "answer_gr": "Οι φάλαινες τραγουδούν για να επικοινωνούν μεταξύ τους, συχνά για ζευγάρωμα ή για να προσανατολίζονται στον ωκεανό."
+    },
+    {
+        "question": "What is the speed of light?",
+        "answer": "The speed of light is approximately 299,792 kilometers per second in a vacuum.",
+        "question_gr": "Ποια είναι η ταχύτητα του φωτός;",
+        "answer_gr": "Η ταχύτητα του φωτός είναι περίπου 299.792 χιλιόμετρα το δευτερόλεπτο σε κενό."
+    },
+    {
+        "question": "What is the largest ocean on Earth?",
+        "answer": "The largest ocean on Earth is the Pacific Ocean.",
+        "question_gr": "Ποιος είναι ο μεγαλύτερος ωκεανός στη Γη;",
+        "answer_gr": "Ο μεγαλύτερος ωκεανός στη Γη είναι ο Ειρηνικός Ωκεανός."
+    },
+    {
+        "question": "What is the speed of sound?",
+        "answer": "The speed of sound is approximately 343 meters per second in air at room temperature.",
+        "question_gr": "Ποια είναι η ταχύτητα του ήχου;",
+        "answer_gr": "Η ταχύτητα του ήχου είναι περίπου 343 μέτρα ανά δευτερόλεπτο στον αέρα σε θερμοκρασία δωματίου."
+    },
+    {
+        "question": "Who invented the telephone?",
+        "answer": "The telephone was invented by Alexander Graham Bell in 1876.",
+        "question_gr": "Ποιος εφηύρε το τηλέφωνο;",
+        "answer_gr": "Το τηλέφωνο εφευρέθηκε από τον Αλέξανδρο Γκράχαμ Μπελ το 1876."
+    },
+    {
+        "question": "What is the longest river in the world?",
+        "answer": "The longest river in the world is the Nile River.",
+        "question_gr": "Ποταμός είναι ο μεγαλύτερος ποταμός στον κόσμο;",
+        "answer_gr": "Ο μεγαλύτερος ποταμός στον κόσμο είναι ο ποταμός Νείλος."
+    },
+    {
+        "question": "What is the tallest mountain on Earth?",
+        "answer": "The tallest mountain on Earth is Mount Everest.",
+        "question_gr": "Ποιο είναι το ψηλότερο βουνό στη Γη;",
+        "answer_gr": "Το ψηλότερο βουνό στη Γη είναι το όρος Έβερεστ."
+    },
+    {
+        "question": "What is the boiling point of water?",
+        "answer": "The boiling point of water is 100 degrees Celsius at sea level.",
+        "question_gr": "Ποιο είναι το σημείο βρασμού του νερού;",
+        "answer_gr": "Το σημείο βρασμού του νερού είναι 100 βαθμοί Κελσίου στην επιφάνεια της θάλασσας."
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "answer": "The chemical symbol for gold is Au.",
+        "question_gr": "Ποιο είναι το χημικό σύμβολο για τον χρυσό;",
+        "answer_gr": "Το χημικό σύμβολο για τον χρυσό είναι Au."
+    },
+    {
+        "question": "Who invented the light bulb?",
+        "answer": "The light bulb was invented by Thomas Edison in 1879.",
+        "question_gr": "Ποιος εφηύρε την ηλεκτρική λάμπα;",
+        "answer_gr": "Η ηλεκτρική λάμπα εφευρέθηκε από τον Τόμας Έντισον το 1879."
+    },
+    {
+        "question": "What is the main source of energy for the Earth?",
+        "answer": "The main source of energy for the Earth is the Sun.",
+        "question_gr": "Ποια είναι η κύρια πηγή ενέργειας για τη Γη;",
+        "answer_gr": "Η κύρια πηγή ενέργειας για τη Γη είναι ο Ήλιος."
+    },
+    {
+        "question": "How many planets are in the Solar System?",
+        "answer": "There are eight planets in the Solar System.",
+        "question_gr": "Πόσοι πλανήτες υπάρχουν στο Ηλιακό Σύστημα;",
+        "answer_gr": "Υπάρχουν οκτώ πλανήτες στο Ηλιακό Σύστημα."
+    },
+    {
+        "question": "What is the largest desert in the world?",
+        "answer": "The largest desert in the world is the Sahara Desert.",
+        "question_gr": "Ποια είναι η μεγαλύτερη έρημος στον κόσμο;",
+        "answer_gr": "Η μεγαλύτερη έρημος στον κόσμο είναι η έρημος Σαχάρα."
+    },
+    {
+        "question": "What is the process of photosynthesis?",
+        "answer": "Photosynthesis is the process by which plants convert light energy into chemical energy to produce food.",
+        "question_gr": "Τι είναι η διαδικασία της φωτοσύνθεσης;",
+        "answer_gr": "Η φωτοσύνθεση είναι η διαδικασία με την οποία τα φυτά μετατρέπουν την ηλιακή ενέργεια σε χημική ενέργεια για να παράγουν τροφή."
+    },
+    {
+        "question": "What is the smallest unit of matter?",
+        "answer": "The smallest unit of matter is the atom.",
+        "question_gr": "Ποια είναι η μικρότερη μονάδα ύλης;",
+        "answer_gr": "Η μικρότερη μονάδα ύλης είναι το άτομο."
+    },
+    {
+        "question": "What is the largest city in the world by population?",
+        "answer": "The largest city in the world by population is Tokyo, Japan.",
+        "question_gr": "Ποια είναι η μεγαλύτερη πόλη στον κόσμο σύμφωνα με τον πληθυσμό;",
+        "answer_gr": "Η μεγαλύτερη πόλη στον κόσμο σύμφωνα με τον πληθυσμό είναι το Τόκιο, Ιαπωνία."
+    },
+    {
+        "question": "What is the hottest planet in the solar system?",
+        "answer": "The hottest planet in the solar system is Venus.",
+        "question_gr": "Ποιος είναι ο πιο ζεστός πλανήτης στο ηλιακό σύστημα;",
+        "answer_gr": "Ο πιο ζεστός πλανήτης στο ηλιακό σύστημα είναι η Αφροδίτη."
+    },
+    {
+        "question": "What is the longest day of the year?",
+        "answer": "The longest day of the year is the summer solstice, typically around June 21st.",
+        "question_gr": "Ποια είναι η μεγαλύτερη μέρα του χρόνου;",
+        "answer_gr": "Η μεγαλύτερη μέρα του χρόνου είναι το θερινό ηλιοστάσιο, συνήθως γύρω στις 21 Ιουνίου."
+    },
+    {
+        "question": "What is the smallest planet in our solar system?",
+        "answer": "The smallest planet in our solar system is Mercury.",
+        "question_gr": "Ποιος είναι ο μικρότερος πλανήτης στο ηλιακό μας σύστημα;",
+        "answer_gr": "Ο μικρότερος πλανήτης στο ηλιακό μας σύστημα είναι ο Ερμής."
+    },
+    {
+        "question": "What is the capital of Canada?",
+        "answer": "The capital of Canada is Ottawa.",
+        "question_gr": "Ποια είναι η πρωτεύουσα του Καναδά;",
+        "answer_gr": "Η πρωτεύουσα του Καναδά είναι η Οττάβα."
+    },
+    {
+        "question": "Who invented the first successful airplane?",
+        "answer": "The first successful airplane was invented by the Wright brothers, Orville and Wilbur Wright.",
+        "question_gr": "Ποιος εφηύρε το πρώτο επιτυχημένο αεροπλάνο;",
+        "answer_gr": "Το πρώτο επιτυχημένο αεροπλάνο εφευρέθηκε από τα αδέλφια Wright, τον Όρβιλ και τον Γουίλμπουρ Ράιτ."
+    },
+    {
+        "question": "Who discovered electricity?",
+        "answer": "Electricity was discovered by Benjamin Franklin.",
+        "question_gr": "Ποιος ανακάλυψε το ηλεκτρισμό;",
+        "answer_gr": "Ο ηλεκτρισμός ανακαλύφθηκε από τον Βενιαμίν Φραγκλίνο."
+    },
+    {
+        "question": "What is the tallest building in the world?",
+        "answer": "The tallest building in the world is the Burj Khalifa in Dubai.",
+        "question_gr": "Ποιο είναι το ψηλότερο κτήριο στον κόσμο;",
+        "answer_gr": "Το ψηλότερο κτήριο στον κόσμο είναι ο Μπουρτζ Χαλίφα στο Ντουμπάι."
+    },
+    {
+        "question": "What is the longest time humans have spent in space continuously?",
+        "answer": "The longest time humans have spent in space continuously is 437 days.",
+        "question_gr": "Ποιος είναι ο μεγαλύτερος χρόνος που έχουν περάσει οι άνθρωποι στο διάστημα συνεχώς;",
+        "answer_gr": "Ο μεγαλύτερος χρόνος που έχουν περάσει οι άνθρωποι στο διάστημα συνεχώς είναι 437 ημέρες."
+    },
+    {
+        "question": "What is the tallest waterfall in the world?",
+        "answer": "The tallest waterfall in the world is Angel Falls in Venezuela.",
+        "question_gr": "Ποιος είναι ο ψηλότερος καταρράκτης στον κόσμο;",
+        "answer_gr": "Ο ψηλότερος καταρράκτης στον κόσμο είναι οι Καταρράκτες Άγγελος στη Βενεζουέλα."
+    }
+]
+  

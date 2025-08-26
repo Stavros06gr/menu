@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Brake System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Brake System</h1>
+
+    <img src="image.jpg" alt="Brake System Diagram" />
+
+    <p id="intro">
+      The brake system is responsible for slowing down or stopping the vehicle safely by converting kinetic energy into heat through friction. It consists of components that generate and control the braking force applied to the wheels.
+    </p>
+
+    <h2 id="mech">Mechanical Process</h2>
+    <ul id="mechList">
+      <li><strong>Brake Pedal:</strong> The driver applies force to the brake pedal to initiate braking.</li>
+      <li><strong>Master Cylinder:</strong> Converts the pedal force into hydraulic pressure.</li>
+      <li><strong>Brake Lines:</strong> Transmit hydraulic pressure to the brake calipers or drums.</li>
+      <li><strong>Brake Calipers/Drums:</strong> Apply friction to the brake rotors or drums, slowing the wheels.</li>
+    </ul>
+
+    <h2 id="comp">Core Components</h2>
+    <ul id="compList">
+      <li><strong>Brake Pads:</strong> Create friction against the rotors to slow the wheel.</li>
+      <li><strong>Brake Rotors:</strong> Rotate with the wheels and are slowed by brake pads.</li>
+      <li><strong>Brake Fluid:</strong> Transfers force from the master cylinder to the brakes.</li>
+      <li><strong>ABS Module:</strong> Prevents wheel lockup during emergency braking.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Brake System",
+      intro: "The brake system is responsible for slowing down or stopping the vehicle safely by converting kinetic energy into heat through friction. It consists of components that generate and control the braking force applied to the wheels.",
+      mech: "Mechanical Process",
+      mechList: `
+        <li><strong>Brake Pedal:</strong> The driver applies force to the brake pedal to initiate braking.</li>
+        <li><strong>Master Cylinder:</strong> Converts the pedal force into hydraulic pressure.</li>
+        <li><strong>Brake Lines:</strong> Transmit hydraulic pressure to the brake calipers or drums.</li>
+        <li><strong>Brake Calipers/Drums:</strong> Apply friction to the brake rotors or drums, slowing the wheels.</li>`,
+      comp: "Core Components",
+      compList: `
+        <li><strong>Brake Pads:</strong> Create friction against the rotors to slow the wheel.</li>
+        <li><strong>Brake Rotors:</strong> Rotate with the wheels and are slowed by brake pads.</li>
+        <li><strong>Brake Fluid:</strong> Transfers force from the master cylinder to the brakes.</li>
+        <li><strong>ABS Module:</strong> Prevents wheel lockup during emergency braking.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Φρένων",
+      intro: "Το σύστημα φρένων είναι υπεύθυνο για την επιβράδυνση ή τη στάση του οχήματος με ασφάλεια, μετατρέποντας την κινητική ενέργεια σε θερμότητα μέσω τριβής. Αποτελείται από εξαρτήματα που παράγουν και ελέγχουν τη δύναμη φρεναρίσματος που εφαρμόζεται στους τροχούς.",
+      mech: "Μηχανική Διαδικασία",
+      mechList: `
+        <li><strong>Πεντάλ Φρένου:</strong> Ο οδηγός ασκεί δύναμη στο πεντάλ για να ξεκινήσει το φρενάρισμα.</li>
+        <li><strong>Κύλινδρος Φρένου:</strong> Μετατρέπει τη δύναμη από το πεντάλ σε υδραυλική πίεση.</li>
+        <li><strong>Υδραυλικοί Σωλήνες:</strong> Μεταφέρουν την υδραυλική πίεση στους δαγκάνες ή τυμπάνους φρένων.</li>
+        <li><strong>Δαγκάνες/Τύμπανα Φρένων:</strong> Εφαρμόζουν τριβή στους δίσκους ή τύμπανα, επιβραδύνοντας τους τροχούς.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Τακάκια Φρένων:</strong> Δημιουργούν τριβή με τους δίσκους για την επιβράδυνση του τροχού.</li>
+        <li><strong>Δίσκοι Φρένων:</strong> Περιστρέφονται μαζί με τους τροχούς και επιβραδύνονται από τα τακάκια.</li>
+        <li><strong>Υδραυλικό Υγρό Φρένων:</strong> Μεταφέρει τη δύναμη από τον κύλινδρο φρένου στα φρένα.</li>
+        <li><strong>ABS Μονάδα:</strong> Αποτρέπει το μπλοκάρισμα των τροχών σε περίπτωση έκτακτου φρεναρίσματος.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

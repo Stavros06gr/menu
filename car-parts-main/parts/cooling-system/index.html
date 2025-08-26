@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Cooling System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Cooling System</h1>
+
+    <img src="image.jpg" alt="Cooling System Diagram" />
+
+    <p id="intro">
+      The cooling system regulates the engine temperature by removing excess heat, preventing overheating, and maintaining optimal performance.
+    </p>
+
+    <h2 id="mech">Mechanical Process</h2>
+    <ul id="mechList">
+      <li><strong>Radiator:</strong> Dissipates heat from the coolant into the air.</li>
+      <li><strong>Water Pump:</strong> Circulates coolant through the engine and radiator.</li>
+      <li><strong>Thermostat:</strong> Regulates coolant flow based on engine temperature.</li>
+      <li><strong>Coolant:</strong> Fluid that absorbs and transfers heat away from the engine.</li>
+    </ul>
+
+    <h2 id="comp">Core Components</h2>
+    <ul id="compList">
+      <li><strong>Radiator:</strong> Heat exchanger that cools the engine coolant.</li>
+      <li><strong>Water Pump:</strong> Mechanical pump that moves coolant through the system.</li>
+      <li><strong>Thermostat:</strong> Valve that opens and closes to control coolant flow.</li>
+      <li><strong>Cooling Fan:</strong> Helps draw air through the radiator to improve cooling.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Cooling System",
+      intro: "The cooling system regulates the engine temperature by removing excess heat, preventing overheating, and maintaining optimal performance.",
+      mech: "Mechanical Process",
+      mechList: `
+        <li><strong>Radiator:</strong> Dissipates heat from the coolant into the air.</li>
+        <li><strong>Water Pump:</strong> Circulates coolant through the engine and radiator.</li>
+        <li><strong>Thermostat:</strong> Regulates coolant flow based on engine temperature.</li>
+        <li><strong>Coolant:</strong> Fluid that absorbs and transfers heat away from the engine.</li>`,
+      comp: "Core Components",
+      compList: `
+        <li><strong>Radiator:</strong> Heat exchanger that cools the engine coolant.</li>
+        <li><strong>Water Pump:</strong> Mechanical pump that moves coolant through the system.</li>
+        <li><strong>Thermostat:</strong> Valve that opens and closes to control coolant flow.</li>
+        <li><strong>Cooling Fan:</strong> Helps draw air through the radiator to improve cooling.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Ψύξης",
+      intro: "Το σύστημα ψύξης ρυθμίζει τη θερμοκρασία του κινητήρα αφαιρώντας την περίσσεια θερμότητας, αποτρέποντας την υπερθέρμανση και διατηρώντας την βέλτιστη απόδοση.",
+      mech: "Μηχανική Διαδικασία",
+      mechList: `
+        <li><strong>Ψυγείο (Radiator):</strong> Αποβάλλει τη θερμότητα από το ψυκτικό υγρό στον αέρα.</li>
+        <li><strong>Αντλία Νερού:</strong> Κυκλοφορεί το ψυκτικό υγρό μέσα στον κινητήρα και το ψυγείο.</li>
+        <li><strong>Θερμοστάτης:</strong> Ρυθμίζει τη ροή του ψυκτικού ανάλογα με τη θερμοκρασία του κινητήρα.</li>
+        <li><strong>Ψυκτικό Υγρό:</strong> Υγρό που απορροφά και μεταφέρει τη θερμότητα μακριά από τον κινητήρα.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Ψυγείο (Radiator):</strong> Εναλλάκτης θερμότητας που ψύχει το ψυκτικό υγρό του κινητήρα.</li>
+        <li><strong>Αντλία Νερού:</strong> Μηχανική αντλία που κινεί το ψυκτικό υγρό στο σύστημα.</li>
+        <li><strong>Θερμοστάτης:</strong> Βαλβίδα που ανοίγει και κλείνει για τον έλεγχο της ροής του ψυκτικού.</li>
+        <li><strong>Βεντιλατέρ Ψύξης:</strong> Βοηθά στην τροφοδοσία αέρα μέσω του ψυγείου για βελτίωση της ψύξης.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

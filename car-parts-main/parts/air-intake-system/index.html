@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Air Intake System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Air Intake System</h1>
+
+    <img src="image.jpg" alt="Air Intake Diagram">
+
+    <p id="intro">
+      The air intake system is responsible for bringing clean and measured amounts of air into the engine for the combustion process. It includes components that filter, measure, and guide air into the intake manifold and engine cylinders, ensuring the right air-to-fuel ratio for efficiency and performance.
+    </p>
+
+    <h2 id="mech">Mechanical Process</h2>
+    <ul id="mechList">
+      <li><strong>Air Filter:</strong> Removes dust, debris, and contaminants from incoming air before it reaches the engine.</li>
+      <li><strong>Mass Air Flow Sensor (MAF):</strong> Measures the amount of air entering the system to help the ECU determine the correct fuel delivery.</li>
+      <li><strong>Throttle Body:</strong> Regulates the amount of air that flows into the engine, controlled by the accelerator pedal or ECU.</li>
+      <li><strong>Intake Manifold:</strong> Distributes the incoming air evenly to each cylinder for optimal combustion.</li>
+    </ul>
+
+    <h2 id="comp">Core Components</h2>
+    <ul id="compList">
+      <li><strong>Air Filter Housing:</strong> Holds the air filter and connects to the intake piping.</li>
+      <li><strong>MAF Sensor:</strong> Provides airflow data to the ECU for proper fuel mixture adjustment.</li>
+      <li><strong>Throttle Plate:</strong> A butterfly valve that opens and closes to control airflow.</li>
+      <li><strong>Manifold:</strong> Channels air from the throttle body to the intake valves of each cylinder.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Air Intake System",
+      intro: "The air intake system is responsible for bringing clean and measured amounts of air into the engine for the combustion process. It includes components that filter, measure, and guide air into the intake manifold and engine cylinders, ensuring the right air-to-fuel ratio for efficiency and performance.",
+      mech: "Mechanical Process",
+      mechList: `
+        <li><strong>Air Filter:</strong> Removes dust, debris, and contaminants from incoming air before it reaches the engine.</li>
+        <li><strong>Mass Air Flow Sensor (MAF):</strong> Measures the amount of air entering the system to help the ECU determine the correct fuel delivery.</li>
+        <li><strong>Throttle Body:</strong> Regulates the amount of air that flows into the engine, controlled by the accelerator pedal or ECU.</li>
+        <li><strong>Intake Manifold:</strong> Distributes the incoming air evenly to each cylinder for optimal combustion.</li>`,
+      comp: "Core Components",
+      compList: `
+        <li><strong>Air Filter Housing:</strong> Holds the air filter and connects to the intake piping.</li>
+        <li><strong>MAF Sensor:</strong> Provides airflow data to the ECU for proper fuel mixture adjustment.</li>
+        <li><strong>Throttle Plate:</strong> A butterfly valve that opens and closes to control airflow.</li>
+        <li><strong>Manifold:</strong> Channels air from the throttle body to the intake valves of each cylinder.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Εισαγωγής Αέρα",
+      intro: "Το σύστημα εισαγωγής αέρα είναι υπεύθυνο για την παροχή καθαρού και μετρημένου αέρα στον κινητήρα για την καύση. Περιλαμβάνει εξαρτήματα που φιλτράρουν, μετρούν και καθοδηγούν τον αέρα προς την πολλαπλή εισαγωγής και τους κυλίνδρους του κινητήρα, εξασφαλίζοντας τον σωστό λόγο αέρα-καυσίμου για απόδοση και αποδοτικότητα.",
+      mech: "Μηχανική Διαδικασία",
+      mechList: `
+        <li><strong>Φίλτρο Αέρα:</strong> Αφαιρεί σκόνη, υπολείμματα και ρύπους από τον εισερχόμενο αέρα πριν φτάσει στον κινητήρα.</li>
+        <li><strong>Αισθητήρας Ροής Μάζας Αέρα (MAF):</strong> Μετρά την ποσότητα του αέρα που εισέρχεται στο σύστημα ώστε να βοηθήσει την ECU να ρυθμίσει την κατάλληλη παροχή καυσίμου.</li>
+        <li><strong>Σώμα Πεταλούδας:</strong> Ρυθμίζει την ποσότητα του αέρα που εισέρχεται στον κινητήρα, ελεγχόμενο από το γκάζι ή την ECU.</li>
+        <li><strong>Πολλαπλή Εισαγωγής:</strong> Διανέμει ομοιόμορφα τον εισερχόμενο αέρα σε κάθε κύλινδρο για βέλτιστη καύση.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Κέλυφος Φίλτρου Αέρα:</strong> Περιλαμβάνει το φίλτρο αέρα και συνδέεται με τους σωλήνες εισαγωγής.</li>
+        <li><strong>Αισθητήρας MAF:</strong> Παρέχει δεδομένα ροής αέρα στην ECU για κατάλληλη προσαρμογή μείγματος καυσίμου.</li>
+        <li><strong>Πεταλούδα Γκαζιού:</strong> Βαλβίδα τύπου "πεταλούδα" που ανοίγει και κλείνει για τον έλεγχο της ροής του αέρα.</li>
+        <li><strong>Πολλαπλή:</strong> Κατευθύνει τον αέρα από το σώμα πεταλούδας στις βαλβίδες εισαγωγής κάθε κυλίνδρου.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

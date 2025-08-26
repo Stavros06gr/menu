@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Suspension System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Suspension System</h1>
+
+    <img src="image.jpg" alt="Suspension System Diagram" />
+
+    <p id="intro">
+      The suspension system supports the vehicle’s weight, absorbs road shocks, and maintains tire contact with the road. It includes springs, shock absorbers, struts, control arms, and sway bars.
+    </p>
+
+    <h2 id="mech">How Suspension Works</h2>
+    <ul id="mechList">
+      <li><strong>Springs:</strong> Support vehicle weight and absorb bumps.</li>
+      <li><strong>Shock Absorbers:</strong> Dampen vibrations and control rebound motion.</li>
+      <li><strong>Struts:</strong> Combine spring and shock absorber in one unit.</li>
+      <li><strong>Sway Bars:</strong> Reduce body roll during cornering.</li>
+    </ul>
+
+    <h2 id="comp">Key Components</h2>
+    <ul id="compList">
+      <li><strong>Springs (Coil/Leaf):</strong> Store energy from impacts and maintain ride height.</li>
+      <li><strong>Shock Absorbers:</strong> Control spring movement and ensure ride comfort.</li>
+      <li><strong>Struts:</strong> Structural components that also dampen motion.</li>
+      <li><strong>Control Arms:</strong> Link the wheels to the frame while allowing vertical movement.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Suspension System",
+      intro: "The suspension system supports the vehicle’s weight, absorbs road shocks, and maintains tire contact with the road. It includes springs, shock absorbers, struts, control arms, and sway bars.",
+      mech: "How Suspension Works",
+      mechList: `
+        <li><strong>Springs:</strong> Support vehicle weight and absorb bumps.</li>
+        <li><strong>Shock Absorbers:</strong> Dampen vibrations and control rebound motion.</li>
+        <li><strong>Struts:</strong> Combine spring and shock absorber in one unit.</li>
+        <li><strong>Sway Bars:</strong> Reduce body roll during cornering.</li>`,
+      comp: "Key Components",
+      compList: `
+        <li><strong>Springs (Coil/Leaf):</strong> Store energy from impacts and maintain ride height.</li>
+        <li><strong>Shock Absorbers:</strong> Control spring movement and ensure ride comfort.</li>
+        <li><strong>Struts:</strong> Structural components that also dampen motion.</li>
+        <li><strong>Control Arms:</strong> Link the wheels to the frame while allowing vertical movement.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Ανάρτησης",
+      intro: "Το σύστημα ανάρτησης υποστηρίζει το βάρος του οχήματος, απορροφά κραδασμούς από το δρόμο και διατηρεί την επαφή των ελαστικών με το οδόστρωμα. Περιλαμβάνει ελατήρια, αμορτισέρ, γόνατα ανάρτησης, ψαλίδια και αντιστρεπτικές ράβδους.",
+      mech: "Πώς Λειτουργεί η Ανάρτηση",
+      mechList: `
+        <li><strong>Ελατήρια:</strong> Υποστηρίζουν το βάρος και απορροφούν τους κραδασμούς.</li>
+        <li><strong>Αμορτισέρ:</strong> Σβήνουν τις ταλαντώσεις και ελέγχουν την κίνηση επαναφοράς.</li>
+        <li><strong>Γόνατα Ανάρτησης:</strong> Συνδυάζουν ελατήριο και αμορτισέρ σε μία μονάδα.</li>
+        <li><strong>Αντιστρεπτικές Ράβδοι:</strong> Μειώνουν την κλίση του αμαξώματος στις στροφές.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Ελατήρια (Σπειροειδή/Φύλλων):</strong> Απορροφούν ενέργεια από κραδασμούς και διατηρούν το ύψος.</li>
+        <li><strong>Αμορτισέρ:</strong> Ελέγχουν την κίνηση των ελατηρίων και προσφέρουν άνεση.</li>
+        <li><strong>Γόνατα Ανάρτησης:</strong> Δομικά στοιχεία που προσφέρουν και απόσβεση κραδασμών.</li>
+        <li><strong>Ψαλίδια:</strong> Συνδέουν τους τροχούς με το πλαίσιο επιτρέποντας κατακόρυφη κίνηση.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>

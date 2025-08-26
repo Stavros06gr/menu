@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../logo.png">
+  <title>Clutch System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container" id="content">
+
+    <h1 id="title">Clutch System</h1>
+
+    <img src="image.jpg" alt="Clutch System Diagram" />
+
+    <p id="intro">
+      The clutch system connects and disconnects the engine from the transmission to allow smooth gear changes and vehicle start/stop without stalling.
+    </p>
+
+    <h2 id="mech">Mechanical Process</h2>
+    <ul id="mechList">
+      <li><strong>Clutch Pedal:</strong> The driver presses to disengage the clutch.</li>
+      <li><strong>Pressure Plate:</strong> Applies force to the clutch disc to engage power transfer.</li>
+      <li><strong>Clutch Disc:</strong> Friction disc that transmits torque from the engine to the transmission.</li>
+      <li><strong>Release Bearing:</strong> Releases pressure from the pressure plate when the pedal is pressed.</li>
+    </ul>
+
+    <h2 id="comp">Core Components</h2>
+    <ul id="compList">
+      <li><strong>Flywheel:</strong> Mounted on the engine crankshaft, provides a friction surface for the clutch disc.</li>
+      <li><strong>Clutch Disc:</strong> Transfers torque by friction between flywheel and pressure plate.</li>
+      <li><strong>Pressure Plate:</strong> Maintains pressure to keep the clutch engaged.</li>
+      <li><strong>Release Bearing:</strong> Allows disengagement of the clutch when pressed.</li>
+    </ul>
+
+    <div class="center-button">
+      <button id="toggleBtn" onclick="toggleLanguage()">Translate to Greek</button>
+    </div>
+
+  </div>
+
+  <script>
+    let isGreek = false;
+
+    const texts = {
+      title: "Clutch System",
+      intro: "The clutch system connects and disconnects the engine from the transmission to allow smooth gear changes and vehicle start/stop without stalling.",
+      mech: "Mechanical Process",
+      mechList: `
+        <li><strong>Clutch Pedal:</strong> The driver presses to disengage the clutch.</li>
+        <li><strong>Pressure Plate:</strong> Applies force to the clutch disc to engage power transfer.</li>
+        <li><strong>Clutch Disc:</strong> Friction disc that transmits torque from the engine to the transmission.</li>
+        <li><strong>Release Bearing:</strong> Releases pressure from the pressure plate when the pedal is pressed.</li>`,
+      comp: "Core Components",
+      compList: `
+        <li><strong>Flywheel:</strong> Mounted on the engine crankshaft, provides a friction surface for the clutch disc.</li>
+        <li><strong>Clutch Disc:</strong> Transfers torque by friction between flywheel and pressure plate.</li>
+        <li><strong>Pressure Plate:</strong> Maintains pressure to keep the clutch engaged.</li>
+        <li><strong>Release Bearing:</strong> Allows disengagement of the clutch when pressed.</li>`
+    };
+
+    const greekTexts = {
+      title: "Σύστημα Συμπλέκτη",
+      intro: "Το σύστημα συμπλέκτη συνδέει και αποσυνδέει τον κινητήρα από το κιβώτιο ταχυτήτων για ομαλές αλλαγές σχέσεων και εκκίνηση/στάση του οχήματος χωρίς σβήσιμο.",
+      mech: "Μηχανική Διαδικασία",
+      mechList: `
+        <li><strong>Πεντάλ Συμπλέκτη:</strong> Ο οδηγός πατά για να αποσυνδέσει τον συμπλέκτη.</li>
+        <li><strong>Πλάκα Πίεσης:</strong> Εφαρμόζει δύναμη στον δίσκο συμπλέκτη για τη μετάδοση ισχύος.</li>
+        <li><strong>Δίσκος Συμπλέκτη:</strong> Δίσκος τριβής που μεταφέρει ροπή από τον κινητήρα στο κιβώτιο.</li>
+        <li><strong>Ρουλεμάν Αποδέσμευσης:</strong> Αφαιρεί πίεση από την πλάκα πίεσης όταν πατιέται το πεντάλ.</li>`,
+      comp: "Βασικά Στοιχεία",
+      compList: `
+        <li><strong>Σφόνδυλος (Flywheel):</strong> Τοποθετημένος στον στροφαλοφόρο άξονα, παρέχει επιφάνεια τριβής για το δίσκο συμπλέκτη.</li>
+        <li><strong>Δίσκος Συμπλέκτη:</strong> Μεταφέρει ροπή μέσω τριβής μεταξύ σφονδύλου και πλάκας πίεσης.</li>
+        <li><strong>Πλάκα Πίεσης:</strong> Διατηρεί πίεση για να κρατά τον συμπλέκτη εμπλεγμένο.</li>
+        <li><strong>Ρουλεμάν Αποδέσμευσης:</strong> Επιτρέπει την αποσύνδεση του συμπλέκτη όταν πατιέται.</li>`
+    };
+
+    function toggleLanguage() {
+      isGreek = !isGreek;
+      const lang = isGreek ? greekTexts : texts;
+      document.getElementById("toggleBtn").textContent = isGreek ? "Μετάφραση στα Αγγλικά" : "Translate to Greek";
+      document.getElementById("title").innerHTML = lang.title;
+      document.getElementById("intro").innerHTML = lang.intro;
+      document.getElementById("mech").textContent = lang.mech;
+      document.getElementById("mechList").innerHTML = lang.mechList;
+      document.getElementById("comp").textContent = lang.comp;
+      document.getElementById("compList").innerHTML = lang.compList;
+    }
+  </script>
+</body>
+</html>
